@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emulator_program", "emulator_program\emulator_program.csproj", "{CCBB13AC-39FC-4EC1-846C-0E1D0304877B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCBB13AC-39FC-4EC1-846C-0E1D0304877B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBB13AC-39FC-4EC1-846C-0E1D0304877B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBB13AC-39FC-4EC1-846C-0E1D0304877B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBB13AC-39FC-4EC1-846C-0E1D0304877B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
