@@ -21,7 +21,12 @@ namespace emulator_program
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             //Button to start the NES Emulator
             string myFileName = "nestopia.exe";
@@ -33,7 +38,7 @@ namespace emulator_program
             startProgram.Start();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             //Button to start the SNES Emulator
             string myFileName = "snes9x.exe";
@@ -45,31 +50,7 @@ namespace emulator_program
             startProgram.Start();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //Button to start the Genesis Emulator
-            string myFileName = "Fusion.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "Genesis", "Fusion364", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //Button to start the NEOGEO/CAPCOM Emulator
-            string myFileName = "WinKawaks.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "Kawaks", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
             //Button to start the Nintendo 64 Emulator
             string myFileName = "Project64.exe";
@@ -81,7 +62,7 @@ namespace emulator_program
             startProgram.Start();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
             //Button to start the GameBoy Advance and GameBoy Emulator
             string myFileName = "VisualBoyAdvance-M.exe";
@@ -93,7 +74,7 @@ namespace emulator_program
             startProgram.Start();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void pictureBox7_Click(object sender, EventArgs e)
         {
             //Button to start the Nintendo DS Emulator
             string myFileName = "DeSmuME_0.9.10_x86.exe";
@@ -105,9 +86,28 @@ namespace emulator_program
             startProgram.Start();
         }
 
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
+            //Button to start the Genesis Emulator
+            string myFileName = "Fusion.exe";
+            string root = Path.GetFullPath(myFileName);
+            root = root.Remove(3);
+            string path = Path.Combine(root, "Genesis", "Fusion364", myFileName);
+            Process startProgram = new Process();
+            startProgram.StartInfo.FileName = path;
+            startProgram.Start();
+        }
 
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            //Button to start the NEOGEO/CAPCOM Emulator
+            string myFileName = "WinKawaks.exe";
+            string root = Path.GetFullPath(myFileName);
+            root = root.Remove(3);
+            string path = Path.Combine(root, "Kawaks", myFileName);
+            Process startProgram = new Process();
+            startProgram.StartInfo.FileName = path;
+            startProgram.Start();
         }
     }
 }
