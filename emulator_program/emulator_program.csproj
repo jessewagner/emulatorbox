@@ -44,16 +44,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="EMULATORBOX.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EMULATORBOX.Designer.cs">
+      <DependentUpon>EMULATORBOX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NES.Designer.cs">
+      <DependentUpon>NES.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SNES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SNES.Designer.cs">
+      <DependentUpon>SNES.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EMULATORBOX.resx">
+      <DependentUpon>EMULATORBOX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NES.resx">
+      <DependentUpon>NES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,6 +79,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SNES.resx">
+      <DependentUpon>SNES.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

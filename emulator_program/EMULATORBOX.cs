@@ -28,26 +28,14 @@ namespace emulator_program
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            //Button to start the NES Emulator
-            string myFileName = "nestopia.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "Nestopia 1.4", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            NES nes = new NES();
+            nes.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //Button to start the SNES Emulator
-            string myFileName = "snes9x.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "Snes9x 1.52", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            SNES snes = new SNES();
+            snes.ShowDialog();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -108,6 +96,11 @@ namespace emulator_program
             Process startProgram = new Process();
             startProgram.StartInfo.FileName = path;
             startProgram.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
