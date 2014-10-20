@@ -40,67 +40,75 @@ namespace emulator_program
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            //Button to start the Nintendo 64 Emulator
-            string myFileName = "Project64.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "Project64", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            N64 n64 = new N64();
+            n64.ShowDialog();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            //Button to start the GameBoy Advance and GameBoy Emulator
-            string myFileName = "VisualBoyAdvance-M.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "VisualBoyAdvance-M", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            GameBoy gameboy = new GameBoy();
+            gameboy.ShowDialog();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            //Button to start the Nintendo DS Emulator
-            string myFileName = "DeSmuME_0.9.10_x86.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "DeSmu", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            NDS nds = new NDS();
+            nds.ShowDialog();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //Button to start the Genesis Emulator
-            string myFileName = "Fusion.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "Genesis", "Fusion364", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            Genesis genesis = new Genesis();
+            genesis.ShowDialog();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            //Button to start the NEOGEO/CAPCOM Emulator
-            string myFileName = "WinKawaks.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, "Kawaks", myFileName);
-            Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            NEOGEO neogeo = new NEOGEO();
+            neogeo.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public static void fileOpener(string fileName, string pathName, string searchPath)
+        {
+            string myFileName = fileName;
+            string root = Path.GetFullPath(myFileName);
+            root = root.Remove(3);
+            string FBDpath = Path.Combine(root, "Roms", searchPath);
+            OpenFileDialog OFD = new OpenFileDialog();
+            OFD.Multiselect = false;
+            OFD.InitialDirectory = FBDpath;
+            if (OFD.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string path = Path.Combine(root, pathName, myFileName);
+                    string path2 = string.Format("\"{0}\"", OFD.FileName);
+                    Process startProgram = new Process();
+                    ProcessStartInfo startInfo = new ProcessStartInfo(path);
+                    startInfo.Arguments = path2;
+                    Process.Start(startInfo);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        public static void emulatorOpener(string fileName, string pathName)
+        {
+            string myFileName = fileName;
+            string root = Path.GetFullPath(myFileName);
+            root = root.Remove(3);
+            string path = Path.Combine(root, pathName, myFileName);
+            Process startProgram = new Process();
+            startProgram.StartInfo.FileName = path;
+            startProgram.Start();
         }
     }
 }

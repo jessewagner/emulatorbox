@@ -73,11 +73,11 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 196);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 675);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(648, 110);
+            this.richTextBox1.Size = new System.Drawing.Size(648, 174);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -85,7 +85,7 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 156);
+            this.label2.Location = new System.Drawing.Point(13, 637);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 23);
             this.label2.TabIndex = 5;

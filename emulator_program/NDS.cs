@@ -12,26 +12,26 @@ using System.Diagnostics;
 
 namespace emulator_program
 {
-    public partial class NES : Form
+    public partial class NDS : Form
     {
-        public NES()
+        public NDS()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EMULATORBOX.fileOpener("nestopia.exe", "Nestopia 1.4", "Nintendo Roms");
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            EMULATORBOX.fileOpener("DeSmuME_0.9.10_x86.exe", "DeSmu", "Nintendo DS Roms");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            EMULATORBOX.emulatorOpener("nestopia.exe", "Nestopia 1.4");
+            EMULATORBOX.emulatorOpener("DeSmuME_0.9.10_x86.exe", "DeSmu");
         }
     }
 }

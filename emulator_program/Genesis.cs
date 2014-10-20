@@ -12,19 +12,24 @@ using System.Diagnostics;
 
 namespace emulator_program
 {
-    public partial class SNES : Form
+    public partial class Genesis : Form
     {
-        public SNES()
+        public Genesis()
         {
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            string myFileName = "snes9x.exe";
+            string myFileName = "Fusion.exe";
             string root = Path.GetFullPath(myFileName);
             root = root.Remove(3);
-            string FBDpath = Path.Combine(root, "Roms", "Super Nintendo Roms");
+            string FBDpath = Path.Combine(root, "Genesis");
             OpenFileDialog OFD = new OpenFileDialog();
             OFD.Multiselect = false;
             OFD.InitialDirectory = FBDpath;
@@ -32,7 +37,7 @@ namespace emulator_program
             {
                 try
                 {
-                    string path = Path.Combine(root, "Snes9x 1.52", myFileName);
+                    string path = Path.Combine(root, "Genesis", "Fusion364", myFileName);
                     string path2 = string.Format("\"{0}\"", OFD.FileName);
                     Process startProgram = new Process();
                     ProcessStartInfo startInfo = new ProcessStartInfo(path);
@@ -46,14 +51,15 @@ namespace emulator_program
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            EMULATORBOX.emulatorOpener("snes9x.exe", "Snes9x 1.52");
+            string myFileName = "Fusion.exe";
+            string root = Path.GetFullPath(myFileName);
+            root = root.Remove(3);
+            string path = Path.Combine(root, "Genesis", "Fusion364", myFileName);
+            Process startProgram = new Process();
+            startProgram.StartInfo.FileName = path;
+            startProgram.Start();
         }
     }
 }

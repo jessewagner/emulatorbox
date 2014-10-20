@@ -12,26 +12,26 @@ using System.Diagnostics;
 
 namespace emulator_program
 {
-    public partial class NES : Form
+    public partial class N64 : Form
     {
-        public NES()
+        public N64()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EMULATORBOX.fileOpener("nestopia.exe", "Nestopia 1.4", "Nintendo Roms");
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            EMULATORBOX.fileOpener("Project64.exe", "Project64", "Nintendo 64 Roms");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            EMULATORBOX.emulatorOpener("nestopia.exe", "Nestopia 1.4");
+            EMULATORBOX.emulatorOpener("Project64.exe", "Project64");
         }
     }
 }

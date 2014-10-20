@@ -50,6 +50,36 @@
     <Compile Include="EMULATORBOX.Designer.cs">
       <DependentUpon>EMULATORBOX.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameBoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameBoy.Designer.cs">
+      <DependentUpon>GameBoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genesis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Genesis.Designer.cs">
+      <DependentUpon>Genesis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="N64.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="N64.Designer.cs">
+      <DependentUpon>N64.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NDS.Designer.cs">
+      <DependentUpon>NDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEOGEO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEOGEO.Designer.cs">
+      <DependentUpon>NEOGEO.cs</DependentUpon>
+    </Compile>
     <Compile Include="NES.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +96,21 @@
     </Compile>
     <EmbeddedResource Include="EMULATORBOX.resx">
       <DependentUpon>EMULATORBOX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameBoy.resx">
+      <DependentUpon>GameBoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genesis.resx">
+      <DependentUpon>Genesis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N64.resx">
+      <DependentUpon>N64.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NDS.resx">
+      <DependentUpon>NDS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEOGEO.resx">
+      <DependentUpon>NEOGEO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NES.resx">
       <DependentUpon>NES.cs</DependentUpon>
