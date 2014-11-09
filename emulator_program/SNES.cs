@@ -21,29 +21,7 @@ namespace emulator_program
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string myFileName = "snes9x.exe";
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string FBDpath = Path.Combine(root, "Roms", "Super Nintendo Roms");
-            OpenFileDialog OFD = new OpenFileDialog();
-            OFD.Multiselect = false;
-            OFD.InitialDirectory = FBDpath;
-            if (OFD.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    string path = Path.Combine(root, "Snes9x 1.52", myFileName);
-                    string path2 = string.Format("\"{0}\"", OFD.FileName);
-                    Process startProgram = new Process();
-                    ProcessStartInfo startInfo = new ProcessStartInfo(path);
-                    startInfo.Arguments = path2;
-                    Process.Start(startInfo);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
+            EMULATORBOX.fileOpener("snes9x.exe", "Snes9x 1.52", "Super Nintendo Roms");
         }
 
         private void button1_Click(object sender, EventArgs e)
