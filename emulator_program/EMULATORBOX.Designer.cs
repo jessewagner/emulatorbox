@@ -706,7 +706,6 @@
             this.gameboyEmuOpenButton.Text = "Open the Emulator";
             this.gameboyEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.gameboyEmuOpenButton.UseVisualStyleBackColor = true;
-            this.gameboyEmuOpenButton.Visible = false;
             this.gameboyEmuOpenButton.Click += new System.EventHandler(this.gameboyEmuOpenButton_Click);
             // 
             // label14
