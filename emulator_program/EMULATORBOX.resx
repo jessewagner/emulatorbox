@@ -165,7 +165,7 @@
         8m2v29fvrLwzMBQydHc4cnjkLvvu5L2key/vZ9yff7DpIfph4SOpR+WPlR7X/aj3Y+uI5ciZUdfRvidB
         Tx6Mscae/5T+04fx/Kfkp+UTqhONk2aTp6fcp24+W/1s/Hnq8/npgp+lf65+ofviu18cf+mbWTUz/pL/
         cuHX4lfyr468Xva6e9Z/9vGb5Dfzc4Vv5d8efcd41/s+7P3EfOYH7IeKj3ofuz55f3q4kLyw8Bv3hPP7
-        MvrwcQAAAAlwSFlzAAALDQAACw0B7QfALAAAAAZiS0dEAP8A/wD/oL2nkwAAAF90RVh0Y29tbWVudABG
+        MvrwcQAAAAlwSFlzAAALDAAACwwBP0AiyAAAAAZiS0dEAP8A/wD/oL2nkwAAAF90RVh0Y29tbWVudABG
         aWxlIHNvdXJjZTogaHR0cDovL2NvbW1vbnMud2lraW1lZGlhLm9yZy93aWtpL0ZpbGU6TkVTLWNvbnNv
         bGUtd2l0aC1jb250cm9sbGVyLXBuZy5wbme8LC+zAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDEwLTA5LTA3
         VDEzOjM4OjQ0KzAwOjAwgza7wwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxMC0wOS0wN1QxMzozODo0NCsw
@@ -5936,9 +5936,6 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
   <data name="label9.Text" xml:space="preserve">
     <value>To play a game for the Nintendo Entertainment System, click on the Open File button below and select the game you would like to play. Otherwise, click the button labeled Back to go back to the previous screen.</value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>114, 17</value>
-  </metadata>
   <data name="nesBackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -8861,6 +8858,9 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         /9k=
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="nesPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAyAAAAIuCAYAAABHDWysAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -23160,6 +23160,9 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         PZVAH6VeUe+aMZoxis9TQUDFFFFMAooooAKKKKAP/9k=
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="neogeoPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAgEAAAAAAAD/4AAcT2NhZCRSZXY6IDE4ODcxICQAAAAAAAAAAGj/2wBDAAMEBAYI
@@ -23788,12 +23791,6 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         5xBeGmGhHOxureEAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>114, 17</value>
-  </metadata>
   <data name="snesPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYG
@@ -24535,9 +24532,6 @@ Many popular SNES titles have since been ported to the Game Boy Advance, which h
 
 The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System</value>
   </data>
-  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>211, 17</value>
-  </metadata>
   <data name="snesOpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -24572,9 +24566,6 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
         wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>211, 17</value>
-  </metadata>
   <data name="n64Panel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAgEASABIAAD/7gAOQWRvYmUAZAAAAAAB/+EWrEV4aWYAAE1NACoAAAAIAAoBDwAC
@@ -28303,7 +28294,7 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
         KCW1OJmBgdEAyM4uLykAijPOAbJFkrLB7A0gdlFIkDOQfQTI5kuHsK+A2EkQ9hMQuwjoCSD7C0h9OpjN
         xAE2B8KWAbFLUitA9jI45xdUFmWmZ5QoGFpaWio4puQnpSoEVxaXpOYWK3jmJecXFeQXJZakpgDVQtwH
         BoIQhaAQ0wBqtNBkoDIAxQOE9TkQHL6MYmcQYgiQXFpUBmUyMhkT5iPMmCPBwOC/lIGB5Q9CzKSXgWGB
-        DgMD/1SEmJohA4OAPgPDvjkAwMZP/Uvs3KIAAAAJcEhZcwAAJOcAACTnAfStqwYAAAAGYktHRAD/AP8A
+        DgMD/1SEmJohA4OAPgPDvjkAwMZP/Uvs3KIAAAAJcEhZcwAAJOYAACTmASbqSeIAAAAGYktHRAD/AP8A
         /6C9p5MAAABadEVYdGNvbW1lbnQARmlsZSBzb3VyY2U6IC8vY29tbW9ucy53aWtpbWVkaWEub3JnL3dp
         a2kvRmlsZTpTZWdhLUdlbmVzaXMtTkEtTWsyLUNvbnNvbGUtU2V0LnBuZ1TR1Z8AAAAldEVYdGRhdGU6
         Y3JlYXRlADIwMTEtMTAtMTBUMjE6MTg6NDkrMDA6MDBw4wI/AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDEx
@@ -31928,7 +31919,7 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>132</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -38,12 +38,6 @@
             this.nesOpenFileButton = new System.Windows.Forms.Button();
             this.nesEmuOpenButton = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.neogeoPanel = new System.Windows.Forms.Panel();
-            this.neogeoEmuOpenButton = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.neogeoBackButton = new System.Windows.Forms.Button();
             this.nesPicture = new System.Windows.Forms.PictureBox();
             this.closeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,8 +53,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.neogeoPanel = new System.Windows.Forms.Panel();
+            this.neogeoEmuOpenButton = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.neogeoBackButton = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.snesPanel = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -68,7 +67,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.snesBackButton = new System.Windows.Forms.Button();
             this.snesEmuOpenButton = new System.Windows.Forms.Button();
-            this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.n64Panel = new System.Windows.Forms.Panel();
             this.n64EmuOpenButton = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -99,7 +97,6 @@
             this.genesisBackButton = new System.Windows.Forms.Button();
             this.nesPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
-            this.neogeoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nesPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -107,6 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.neogeoPanel.SuspendLayout();
             this.snesPanel.SuspendLayout();
             this.n64Panel.SuspendLayout();
             this.gameboyPanel.SuspendLayout();
@@ -116,9 +114,10 @@
             // 
             // nesPanel
             // 
-            this.nesPanel.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.nesPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("nesPanel.BackgroundImage")));
             this.nesPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.nesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.nesPanel.Controls.Add(this.label8);
             this.nesPanel.Controls.Add(this.richTextBox1);
             this.nesPanel.Controls.Add(this.label9);
@@ -164,6 +163,7 @@
             // 
             // nesBackButton
             // 
+            this.nesBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nesBackButton.Image = ((System.Drawing.Image)(resources.GetObject("nesBackButton.Image")));
             this.nesBackButton.Location = new System.Drawing.Point(12, 12);
             this.nesBackButton.Name = "nesBackButton";
@@ -171,12 +171,12 @@
             this.nesBackButton.TabIndex = 8;
             this.nesBackButton.Text = "Back";
             this.nesBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip2.SetToolTip(this.nesBackButton, "Click this button to go back to the Main Page");
             this.nesBackButton.UseVisualStyleBackColor = true;
             this.nesBackButton.Click += new System.EventHandler(this.nesBackButton_Click);
             // 
             // nesOpenFileButton
             // 
+            this.nesOpenFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nesOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("nesOpenFileButton.Image")));
             this.nesOpenFileButton.Location = new System.Drawing.Point(12, 118);
             this.nesOpenFileButton.Name = "nesOpenFileButton";
@@ -184,26 +184,27 @@
             this.nesOpenFileButton.TabIndex = 7;
             this.nesOpenFileButton.Text = "Open File";
             this.nesOpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip2.SetToolTip(this.nesOpenFileButton, "Click this button to open the game file you would like to play");
             this.nesOpenFileButton.UseVisualStyleBackColor = true;
             this.nesOpenFileButton.Click += new System.EventHandler(this.nesOpenFileButton_Click);
             // 
             // nesEmuOpenButton
             // 
+            this.nesEmuOpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nesEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("nesEmuOpenButton.Image")));
             this.nesEmuOpenButton.Location = new System.Drawing.Point(148, 118);
             this.nesEmuOpenButton.Name = "nesEmuOpenButton";
-            this.nesEmuOpenButton.Size = new System.Drawing.Size(131, 35);
+            this.nesEmuOpenButton.Size = new System.Drawing.Size(141, 35);
             this.nesEmuOpenButton.TabIndex = 12;
             this.nesEmuOpenButton.Text = "Open the Emulator";
             this.nesEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip2.SetToolTip(this.nesEmuOpenButton, "Start the emulator program without selecting a game to play.");
             this.nesEmuOpenButton.UseVisualStyleBackColor = true;
             this.nesEmuOpenButton.Click += new System.EventHandler(this.nesEmuOpenButton_Click);
             // 
             // mainPanel
             // 
+            this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mainPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainPanel.BackgroundImage")));
+            this.mainPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.mainPanel.Controls.Add(this.nesPicture);
             this.mainPanel.Controls.Add(this.closeButton);
             this.mainPanel.Controls.Add(this.label1);
@@ -219,17 +220,209 @@
             this.mainPanel.Controls.Add(this.label4);
             this.mainPanel.Controls.Add(this.label3);
             this.mainPanel.Controls.Add(this.pictureBox6);
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(934, 861);
             this.mainPanel.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.mainPanel, "Click on the picture of the system you would like to play");
+            // 
+            // nesPicture
+            // 
+            this.nesPicture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nesPicture.BackColor = System.Drawing.SystemColors.Window;
+            this.nesPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.nesPicture.Image = ((System.Drawing.Image)(resources.GetObject("nesPicture.Image")));
+            this.nesPicture.Location = new System.Drawing.Point(10, 12);
+            this.nesPicture.Name = "nesPicture";
+            this.nesPicture.Size = new System.Drawing.Size(277, 224);
+            this.nesPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.nesPicture.TabIndex = 2;
+            this.nesPicture.TabStop = false;
+            this.toolTip1.SetToolTip(this.nesPicture, "Nintendo Entertainment System");
+            this.nesPicture.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // closeButton
+            // 
+            this.closeButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.closeButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
+            this.closeButton.Location = new System.Drawing.Point(632, 298);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(83, 32);
+            this.closeButton.TabIndex = 18;
+            this.closeButton.Text = "Close";
+            this.closeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 249);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Nintendo Entertainment System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(319, 811);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(277, 20);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "NEOGEO and Capcom Arcade Games";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(319, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(277, 224);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Super Nintendo Entertainment System");
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(319, 575);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(277, 224);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 811);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(277, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Sega Genesis";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(319, 249);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(277, 20);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Super Nintendo Entertainment System";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(319, 536);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(277, 20);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Nintendo DS";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(13, 575);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(277, 224);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox3, "Sega Genesis");
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(632, 12);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(262, 224);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox5, "Nintendo 64");
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(319, 298);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(277, 224);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox7, "Nintendo DS");
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 536);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(277, 20);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "GameBoy and GameBoy Advance";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(632, 249);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(262, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Nintendo 64";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(13, 298);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(277, 224);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox6, "Gameboy & Gameboy Advance");
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // neogeoPanel
             // 
             this.neogeoPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.neogeoPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("neogeoPanel.BackgroundImage")));
             this.neogeoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.neogeoPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.neogeoPanel.Controls.Add(this.neogeoEmuOpenButton);
             this.neogeoPanel.Controls.Add(this.label20);
             this.neogeoPanel.Controls.Add(this.richTextBox7);
@@ -244,10 +437,11 @@
             // 
             // neogeoEmuOpenButton
             // 
+            this.neogeoEmuOpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.neogeoEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("neogeoEmuOpenButton.Image")));
             this.neogeoEmuOpenButton.Location = new System.Drawing.Point(13, 121);
             this.neogeoEmuOpenButton.Name = "neogeoEmuOpenButton";
-            this.neogeoEmuOpenButton.Size = new System.Drawing.Size(129, 32);
+            this.neogeoEmuOpenButton.Size = new System.Drawing.Size(141, 32);
             this.neogeoEmuOpenButton.TabIndex = 19;
             this.neogeoEmuOpenButton.Text = "Open the Emulator";
             this.neogeoEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -288,6 +482,7 @@
             // 
             // neogeoBackButton
             // 
+            this.neogeoBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.neogeoBackButton.Image = ((System.Drawing.Image)(resources.GetObject("neogeoBackButton.Image")));
             this.neogeoBackButton.Location = new System.Drawing.Point(13, 18);
             this.neogeoBackButton.Name = "neogeoBackButton";
@@ -297,180 +492,6 @@
             this.neogeoBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.neogeoBackButton.UseVisualStyleBackColor = true;
             this.neogeoBackButton.Click += new System.EventHandler(this.neogeoBackButton_Click);
-            // 
-            // nesPicture
-            // 
-            this.nesPicture.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nesPicture.BackColor = System.Drawing.SystemColors.Window;
-            this.nesPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.nesPicture.Image = ((System.Drawing.Image)(resources.GetObject("nesPicture.Image")));
-            this.nesPicture.Location = new System.Drawing.Point(12, 12);
-            this.nesPicture.Name = "nesPicture";
-            this.nesPicture.Size = new System.Drawing.Size(277, 224);
-            this.nesPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.nesPicture.TabIndex = 2;
-            this.nesPicture.TabStop = false;
-            this.nesPicture.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // closeButton
-            // 
-            this.closeButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.closeButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
-            this.closeButton.Location = new System.Drawing.Point(634, 298);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(83, 32);
-            this.closeButton.TabIndex = 18;
-            this.closeButton.Text = "Close";
-            this.closeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Location = new System.Drawing.Point(12, 249);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 20);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Nintendo Entertainment System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.Location = new System.Drawing.Point(321, 811);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(277, 20);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "NEOGEO and Capcom Arcade Games";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(321, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(321, 575);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.Location = new System.Drawing.Point(15, 811);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(277, 20);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Sega Genesis";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.Location = new System.Drawing.Point(321, 249);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 20);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Super Nintendo Entertainment System";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.Location = new System.Drawing.Point(321, 536);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(277, 20);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Nintendo DS";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(15, 575);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(634, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(262, 224);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(321, 298);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.Location = new System.Drawing.Point(15, 536);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(277, 20);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "GameBoy and GameBoy Advance";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.Location = new System.Drawing.Point(634, 249);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 20);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Nintendo 64";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(15, 298);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // toolTip1
             // 
@@ -482,6 +503,7 @@
             this.snesPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.snesPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("snesPanel.BackgroundImage")));
             this.snesPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.snesPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.snesPanel.Controls.Add(this.label10);
             this.snesPanel.Controls.Add(this.richTextBox2);
             this.snesPanel.Controls.Add(this.snesOpenFileButton);
@@ -517,6 +539,7 @@
             // 
             // snesOpenFileButton
             // 
+            this.snesOpenFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.snesOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("snesOpenFileButton.Image")));
             this.snesOpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.snesOpenFileButton.Name = "snesOpenFileButton";
@@ -524,7 +547,6 @@
             this.snesOpenFileButton.TabIndex = 11;
             this.snesOpenFileButton.Text = "Open File";
             this.snesOpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip3.SetToolTip(this.snesOpenFileButton, "Click this button to open the game file you would like to play");
             this.snesOpenFileButton.UseVisualStyleBackColor = true;
             this.snesOpenFileButton.Click += new System.EventHandler(this.snesOpenFileButton_Click);
             // 
@@ -540,6 +562,7 @@
             // 
             // snesBackButton
             // 
+            this.snesBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.snesBackButton.Image = ((System.Drawing.Image)(resources.GetObject("snesBackButton.Image")));
             this.snesBackButton.Location = new System.Drawing.Point(12, 12);
             this.snesBackButton.Name = "snesBackButton";
@@ -547,20 +570,19 @@
             this.snesBackButton.TabIndex = 9;
             this.snesBackButton.Text = "Back";
             this.snesBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip3.SetToolTip(this.snesBackButton, "Click this button to go back to the Main Page");
             this.snesBackButton.UseVisualStyleBackColor = true;
             this.snesBackButton.Click += new System.EventHandler(this.snesBackButton_Click);
             // 
             // snesEmuOpenButton
             // 
+            this.snesEmuOpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.snesEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("snesEmuOpenButton.Image")));
             this.snesEmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.snesEmuOpenButton.Name = "snesEmuOpenButton";
-            this.snesEmuOpenButton.Size = new System.Drawing.Size(130, 30);
+            this.snesEmuOpenButton.Size = new System.Drawing.Size(143, 30);
             this.snesEmuOpenButton.TabIndex = 14;
             this.snesEmuOpenButton.Text = "Open the Emulator";
             this.snesEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip3.SetToolTip(this.snesEmuOpenButton, "Start the emulator program without selecting a game to play.");
             this.snesEmuOpenButton.UseVisualStyleBackColor = true;
             this.snesEmuOpenButton.Click += new System.EventHandler(this.snesEmuOpenButton_Click);
             // 
@@ -569,6 +591,7 @@
             this.n64Panel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.n64Panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("n64Panel.BackgroundImage")));
             this.n64Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.n64Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.n64Panel.Controls.Add(this.n64EmuOpenButton);
             this.n64Panel.Controls.Add(this.label12);
             this.n64Panel.Controls.Add(this.richTextBox3);
@@ -584,10 +607,11 @@
             // 
             // n64EmuOpenButton
             // 
+            this.n64EmuOpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n64EmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("n64EmuOpenButton.Image")));
             this.n64EmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.n64EmuOpenButton.Name = "n64EmuOpenButton";
-            this.n64EmuOpenButton.Size = new System.Drawing.Size(130, 30);
+            this.n64EmuOpenButton.Size = new System.Drawing.Size(140, 30);
             this.n64EmuOpenButton.TabIndex = 20;
             this.n64EmuOpenButton.Text = "Open the Emulator";
             this.n64EmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -616,6 +640,7 @@
             // 
             // n64OpenFileButton
             // 
+            this.n64OpenFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n64OpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("n64OpenFileButton.Image")));
             this.n64OpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.n64OpenFileButton.Name = "n64OpenFileButton";
@@ -640,6 +665,7 @@
             // 
             // n64BackButton
             // 
+            this.n64BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n64BackButton.Image = ((System.Drawing.Image)(resources.GetObject("n64BackButton.Image")));
             this.n64BackButton.Location = new System.Drawing.Point(12, 12);
             this.n64BackButton.Name = "n64BackButton";
@@ -655,6 +681,7 @@
             this.gameboyPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gameboyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameboyPanel.BackgroundImage")));
             this.gameboyPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.gameboyPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gameboyPanel.Controls.Add(this.gameboyEmuOpenButton);
             this.gameboyPanel.Controls.Add(this.label14);
             this.gameboyPanel.Controls.Add(this.richTextBox4);
@@ -670,10 +697,11 @@
             // 
             // gameboyEmuOpenButton
             // 
+            this.gameboyEmuOpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gameboyEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("gameboyEmuOpenButton.Image")));
             this.gameboyEmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.gameboyEmuOpenButton.Name = "gameboyEmuOpenButton";
-            this.gameboyEmuOpenButton.Size = new System.Drawing.Size(130, 30);
+            this.gameboyEmuOpenButton.Size = new System.Drawing.Size(140, 30);
             this.gameboyEmuOpenButton.TabIndex = 20;
             this.gameboyEmuOpenButton.Text = "Open the Emulator";
             this.gameboyEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -703,6 +731,7 @@
             // 
             // gameboyOpenFileButton
             // 
+            this.gameboyOpenFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gameboyOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("gameboyOpenFileButton.Image")));
             this.gameboyOpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.gameboyOpenFileButton.Name = "gameboyOpenFileButton";
@@ -725,6 +754,7 @@
             // 
             // gameboyBackButton
             // 
+            this.gameboyBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gameboyBackButton.Image = ((System.Drawing.Image)(resources.GetObject("gameboyBackButton.Image")));
             this.gameboyBackButton.Location = new System.Drawing.Point(12, 12);
             this.gameboyBackButton.Name = "gameboyBackButton";
@@ -740,6 +770,7 @@
             this.NDSPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.NDSPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NDSPanel.BackgroundImage")));
             this.NDSPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.NDSPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.NDSPanel.Controls.Add(this.NDSEmuOpenButton);
             this.NDSPanel.Controls.Add(this.label16);
             this.NDSPanel.Controls.Add(this.richTextBox5);
@@ -755,10 +786,11 @@
             // 
             // NDSEmuOpenButton
             // 
+            this.NDSEmuOpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NDSEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("NDSEmuOpenButton.Image")));
             this.NDSEmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.NDSEmuOpenButton.Name = "NDSEmuOpenButton";
-            this.NDSEmuOpenButton.Size = new System.Drawing.Size(130, 30);
+            this.NDSEmuOpenButton.Size = new System.Drawing.Size(143, 30);
             this.NDSEmuOpenButton.TabIndex = 20;
             this.NDSEmuOpenButton.Text = "Open the Emulator";
             this.NDSEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -787,6 +819,7 @@
             // 
             // NDSOpenFileButton
             // 
+            this.NDSOpenFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NDSOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("NDSOpenFileButton.Image")));
             this.NDSOpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.NDSOpenFileButton.Name = "NDSOpenFileButton";
@@ -811,6 +844,7 @@
             // 
             // NDSBackButton
             // 
+            this.NDSBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NDSBackButton.Image = ((System.Drawing.Image)(resources.GetObject("NDSBackButton.Image")));
             this.NDSBackButton.Location = new System.Drawing.Point(12, 12);
             this.NDSBackButton.Name = "NDSBackButton";
@@ -826,6 +860,7 @@
             this.genesisPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.genesisPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("genesisPanel.BackgroundImage")));
             this.genesisPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.genesisPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.genesisPanel.Controls.Add(this.genesisEmuOpenButton);
             this.genesisPanel.Controls.Add(this.label18);
             this.genesisPanel.Controls.Add(this.richTextBox6);
@@ -841,10 +876,11 @@
             // 
             // genesisEmuOpenButton
             // 
+            this.genesisEmuOpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genesisEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("genesisEmuOpenButton.Image")));
             this.genesisEmuOpenButton.Location = new System.Drawing.Point(150, 120);
             this.genesisEmuOpenButton.Name = "genesisEmuOpenButton";
-            this.genesisEmuOpenButton.Size = new System.Drawing.Size(130, 33);
+            this.genesisEmuOpenButton.Size = new System.Drawing.Size(139, 33);
             this.genesisEmuOpenButton.TabIndex = 20;
             this.genesisEmuOpenButton.Text = "Open the Emulator";
             this.genesisEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -873,6 +909,7 @@
             // 
             // genesisOpenFileButton
             // 
+            this.genesisOpenFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genesisOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("genesisOpenFileButton.Image")));
             this.genesisOpenFileButton.Location = new System.Drawing.Point(13, 120);
             this.genesisOpenFileButton.Name = "genesisOpenFileButton";
@@ -897,6 +934,7 @@
             // 
             // genesisBackButton
             // 
+            this.genesisBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genesisBackButton.Image = ((System.Drawing.Image)(resources.GetObject("genesisBackButton.Image")));
             this.genesisBackButton.Location = new System.Drawing.Point(13, 18);
             this.genesisBackButton.Name = "genesisBackButton";
@@ -926,7 +964,6 @@
             this.Text = "EMULATORBOX";
             this.nesPanel.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
-            this.neogeoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nesPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -934,6 +971,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.neogeoPanel.ResumeLayout(false);
             this.snesPanel.ResumeLayout(false);
             this.n64Panel.ResumeLayout(false);
             this.gameboyPanel.ResumeLayout(false);
@@ -967,14 +1005,12 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button nesBackButton;
-        private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.Button nesOpenFileButton;
         private System.Windows.Forms.Button nesEmuOpenButton;
         private System.Windows.Forms.Panel snesPanel;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Button snesOpenFileButton;
-        private System.Windows.Forms.ToolTip toolTip3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button snesBackButton;
         private System.Windows.Forms.Button snesEmuOpenButton;
