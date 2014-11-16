@@ -45,7 +45,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.neogeoBackButton = new System.Windows.Forms.Button();
             this.nesPicture = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -205,7 +205,7 @@
             // 
             this.mainPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainPanel.BackgroundImage")));
             this.mainPanel.Controls.Add(this.nesPicture);
-            this.mainPanel.Controls.Add(this.button1);
+            this.mainPanel.Controls.Add(this.closeButton);
             this.mainPanel.Controls.Add(this.label1);
             this.mainPanel.Controls.Add(this.label7);
             this.mainPanel.Controls.Add(this.pictureBox1);
@@ -312,19 +312,19 @@
             this.nesPicture.TabStop = false;
             this.nesPicture.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // button1
+            // closeButton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(634, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 32);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Close";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.closeButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.closeButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
+            this.closeButton.Location = new System.Drawing.Point(634, 298);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(83, 32);
+            this.closeButton.TabIndex = 18;
+            this.closeButton.Text = "Close";
+            this.closeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // label1
             // 
@@ -859,7 +859,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(166, 23);
             this.label18.TabIndex = 19;
-            this.label18.Text = "History of the Nintendo DS";
+            this.label18.Text = "History of the Sega Genesis";
             // 
             // richTextBox6
             // 
@@ -891,9 +891,9 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(909, 51);
             this.label19.TabIndex = 16;
-            this.label19.Text = "To play a game for the Nintendo DS, click on the Open File button below and selec" +
-    "t the game you would like to play. Otherwise, click the button labeled Back to g" +
-    "o back to the previous screen.";
+            this.label19.Text = "To play a game for the Sega Genesis, click on the Open File button below and sele" +
+    "ct the game you would like to play. Otherwise, click the button labeled Back to " +
+    "go back to the previous screen.";
             // 
             // genesisBackButton
             // 
@@ -948,7 +948,7 @@
         private System.Windows.Forms.Panel nesPanel;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.PictureBox nesPicture;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
