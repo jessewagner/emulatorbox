@@ -164,33 +164,39 @@
             // 
             // nesBackButton
             // 
+            this.nesBackButton.Image = ((System.Drawing.Image)(resources.GetObject("nesBackButton.Image")));
             this.nesBackButton.Location = new System.Drawing.Point(12, 12);
             this.nesBackButton.Name = "nesBackButton";
-            this.nesBackButton.Size = new System.Drawing.Size(75, 23);
+            this.nesBackButton.Size = new System.Drawing.Size(75, 32);
             this.nesBackButton.TabIndex = 8;
             this.nesBackButton.Text = "Back";
+            this.nesBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip2.SetToolTip(this.nesBackButton, "Click this button to go back to the Main Page");
             this.nesBackButton.UseVisualStyleBackColor = true;
             this.nesBackButton.Click += new System.EventHandler(this.nesBackButton_Click);
             // 
             // nesOpenFileButton
             // 
+            this.nesOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("nesOpenFileButton.Image")));
             this.nesOpenFileButton.Location = new System.Drawing.Point(12, 118);
             this.nesOpenFileButton.Name = "nesOpenFileButton";
-            this.nesOpenFileButton.Size = new System.Drawing.Size(120, 23);
+            this.nesOpenFileButton.Size = new System.Drawing.Size(120, 35);
             this.nesOpenFileButton.TabIndex = 7;
             this.nesOpenFileButton.Text = "Open File";
+            this.nesOpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip2.SetToolTip(this.nesOpenFileButton, "Click this button to open the game file you would like to play");
             this.nesOpenFileButton.UseVisualStyleBackColor = true;
             this.nesOpenFileButton.Click += new System.EventHandler(this.nesOpenFileButton_Click);
             // 
             // nesEmuOpenButton
             // 
+            this.nesEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("nesEmuOpenButton.Image")));
             this.nesEmuOpenButton.Location = new System.Drawing.Point(148, 118);
             this.nesEmuOpenButton.Name = "nesEmuOpenButton";
-            this.nesEmuOpenButton.Size = new System.Drawing.Size(115, 23);
+            this.nesEmuOpenButton.Size = new System.Drawing.Size(131, 35);
             this.nesEmuOpenButton.TabIndex = 12;
             this.nesEmuOpenButton.Text = "Open the Emulator";
+            this.nesEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip2.SetToolTip(this.nesEmuOpenButton, "Start the emulator program without selecting a game to play.");
             this.nesEmuOpenButton.UseVisualStyleBackColor = true;
             this.nesEmuOpenButton.Click += new System.EventHandler(this.nesEmuOpenButton_Click);
@@ -238,11 +244,13 @@
             // 
             // neogeoEmuOpenButton
             // 
+            this.neogeoEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("neogeoEmuOpenButton.Image")));
             this.neogeoEmuOpenButton.Location = new System.Drawing.Point(13, 121);
             this.neogeoEmuOpenButton.Name = "neogeoEmuOpenButton";
-            this.neogeoEmuOpenButton.Size = new System.Drawing.Size(115, 23);
+            this.neogeoEmuOpenButton.Size = new System.Drawing.Size(129, 32);
             this.neogeoEmuOpenButton.TabIndex = 19;
             this.neogeoEmuOpenButton.Text = "Open the Emulator";
+            this.neogeoEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.neogeoEmuOpenButton.UseVisualStyleBackColor = true;
             this.neogeoEmuOpenButton.Click += new System.EventHandler(this.neogeoEmuOpenButton_Click);
             // 
@@ -280,11 +288,13 @@
             // 
             // neogeoBackButton
             // 
+            this.neogeoBackButton.Image = ((System.Drawing.Image)(resources.GetObject("neogeoBackButton.Image")));
             this.neogeoBackButton.Location = new System.Drawing.Point(13, 18);
             this.neogeoBackButton.Name = "neogeoBackButton";
-            this.neogeoBackButton.Size = new System.Drawing.Size(75, 23);
+            this.neogeoBackButton.Size = new System.Drawing.Size(75, 26);
             this.neogeoBackButton.TabIndex = 15;
             this.neogeoBackButton.Text = "Back";
+            this.neogeoBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.neogeoBackButton.UseVisualStyleBackColor = true;
             this.neogeoBackButton.Click += new System.EventHandler(this.neogeoBackButton_Click);
             // 
@@ -306,11 +316,13 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(634, 298);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(83, 32);
             this.button1.TabIndex = 18;
             this.button1.Text = "Close";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -505,11 +517,13 @@
             // 
             // snesOpenFileButton
             // 
+            this.snesOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("snesOpenFileButton.Image")));
             this.snesOpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.snesOpenFileButton.Name = "snesOpenFileButton";
-            this.snesOpenFileButton.Size = new System.Drawing.Size(120, 23);
+            this.snesOpenFileButton.Size = new System.Drawing.Size(120, 29);
             this.snesOpenFileButton.TabIndex = 11;
             this.snesOpenFileButton.Text = "Open File";
+            this.snesOpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip3.SetToolTip(this.snesOpenFileButton, "Click this button to open the game file you would like to play");
             this.snesOpenFileButton.UseVisualStyleBackColor = true;
             this.snesOpenFileButton.Click += new System.EventHandler(this.snesOpenFileButton_Click);
@@ -526,22 +540,26 @@
             // 
             // snesBackButton
             // 
+            this.snesBackButton.Image = ((System.Drawing.Image)(resources.GetObject("snesBackButton.Image")));
             this.snesBackButton.Location = new System.Drawing.Point(12, 12);
             this.snesBackButton.Name = "snesBackButton";
-            this.snesBackButton.Size = new System.Drawing.Size(75, 23);
+            this.snesBackButton.Size = new System.Drawing.Size(75, 29);
             this.snesBackButton.TabIndex = 9;
             this.snesBackButton.Text = "Back";
+            this.snesBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip3.SetToolTip(this.snesBackButton, "Click this button to go back to the Main Page");
             this.snesBackButton.UseVisualStyleBackColor = true;
             this.snesBackButton.Click += new System.EventHandler(this.snesBackButton_Click);
             // 
             // snesEmuOpenButton
             // 
+            this.snesEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("snesEmuOpenButton.Image")));
             this.snesEmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.snesEmuOpenButton.Name = "snesEmuOpenButton";
-            this.snesEmuOpenButton.Size = new System.Drawing.Size(115, 23);
+            this.snesEmuOpenButton.Size = new System.Drawing.Size(130, 30);
             this.snesEmuOpenButton.TabIndex = 14;
             this.snesEmuOpenButton.Text = "Open the Emulator";
+            this.snesEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.toolTip3.SetToolTip(this.snesEmuOpenButton, "Start the emulator program without selecting a game to play.");
             this.snesEmuOpenButton.UseVisualStyleBackColor = true;
             this.snesEmuOpenButton.Click += new System.EventHandler(this.snesEmuOpenButton_Click);
@@ -566,11 +584,13 @@
             // 
             // n64EmuOpenButton
             // 
+            this.n64EmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("n64EmuOpenButton.Image")));
             this.n64EmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.n64EmuOpenButton.Name = "n64EmuOpenButton";
-            this.n64EmuOpenButton.Size = new System.Drawing.Size(115, 23);
+            this.n64EmuOpenButton.Size = new System.Drawing.Size(130, 30);
             this.n64EmuOpenButton.TabIndex = 20;
             this.n64EmuOpenButton.Text = "Open the Emulator";
+            this.n64EmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.n64EmuOpenButton.UseVisualStyleBackColor = true;
             this.n64EmuOpenButton.Click += new System.EventHandler(this.n64EmuOpenButton_Click);
             // 
@@ -596,11 +616,13 @@
             // 
             // n64OpenFileButton
             // 
+            this.n64OpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("n64OpenFileButton.Image")));
             this.n64OpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.n64OpenFileButton.Name = "n64OpenFileButton";
-            this.n64OpenFileButton.Size = new System.Drawing.Size(120, 23);
+            this.n64OpenFileButton.Size = new System.Drawing.Size(120, 29);
             this.n64OpenFileButton.TabIndex = 17;
             this.n64OpenFileButton.Text = "Open File";
+            this.n64OpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.n64OpenFileButton.UseVisualStyleBackColor = true;
             this.n64OpenFileButton.Click += new System.EventHandler(this.n64OpenFileButton_Click);
             // 
@@ -618,11 +640,13 @@
             // 
             // n64BackButton
             // 
+            this.n64BackButton.Image = ((System.Drawing.Image)(resources.GetObject("n64BackButton.Image")));
             this.n64BackButton.Location = new System.Drawing.Point(12, 12);
             this.n64BackButton.Name = "n64BackButton";
-            this.n64BackButton.Size = new System.Drawing.Size(75, 23);
+            this.n64BackButton.Size = new System.Drawing.Size(75, 29);
             this.n64BackButton.TabIndex = 15;
             this.n64BackButton.Text = "Back";
+            this.n64BackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.n64BackButton.UseVisualStyleBackColor = true;
             this.n64BackButton.Click += new System.EventHandler(this.n64BackButton_Click);
             // 
@@ -646,11 +670,13 @@
             // 
             // gameboyEmuOpenButton
             // 
+            this.gameboyEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("gameboyEmuOpenButton.Image")));
             this.gameboyEmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.gameboyEmuOpenButton.Name = "gameboyEmuOpenButton";
-            this.gameboyEmuOpenButton.Size = new System.Drawing.Size(115, 23);
+            this.gameboyEmuOpenButton.Size = new System.Drawing.Size(130, 30);
             this.gameboyEmuOpenButton.TabIndex = 20;
             this.gameboyEmuOpenButton.Text = "Open the Emulator";
+            this.gameboyEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.gameboyEmuOpenButton.UseVisualStyleBackColor = true;
             this.gameboyEmuOpenButton.Visible = false;
             this.gameboyEmuOpenButton.Click += new System.EventHandler(this.gameboyEmuOpenButton_Click);
@@ -677,11 +703,13 @@
             // 
             // gameboyOpenFileButton
             // 
+            this.gameboyOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("gameboyOpenFileButton.Image")));
             this.gameboyOpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.gameboyOpenFileButton.Name = "gameboyOpenFileButton";
-            this.gameboyOpenFileButton.Size = new System.Drawing.Size(120, 23);
+            this.gameboyOpenFileButton.Size = new System.Drawing.Size(120, 30);
             this.gameboyOpenFileButton.TabIndex = 17;
             this.gameboyOpenFileButton.Text = "Open File";
+            this.gameboyOpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.gameboyOpenFileButton.UseVisualStyleBackColor = true;
             this.gameboyOpenFileButton.Click += new System.EventHandler(this.gameboyOpenFileButton_Click);
             // 
@@ -697,11 +725,13 @@
             // 
             // gameboyBackButton
             // 
+            this.gameboyBackButton.Image = ((System.Drawing.Image)(resources.GetObject("gameboyBackButton.Image")));
             this.gameboyBackButton.Location = new System.Drawing.Point(12, 12);
             this.gameboyBackButton.Name = "gameboyBackButton";
-            this.gameboyBackButton.Size = new System.Drawing.Size(75, 23);
+            this.gameboyBackButton.Size = new System.Drawing.Size(75, 29);
             this.gameboyBackButton.TabIndex = 15;
             this.gameboyBackButton.Text = "Back";
+            this.gameboyBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.gameboyBackButton.UseVisualStyleBackColor = true;
             this.gameboyBackButton.Click += new System.EventHandler(this.gameboyBackButton_Click);
             // 
@@ -725,11 +755,13 @@
             // 
             // NDSEmuOpenButton
             // 
+            this.NDSEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("NDSEmuOpenButton.Image")));
             this.NDSEmuOpenButton.Location = new System.Drawing.Point(149, 114);
             this.NDSEmuOpenButton.Name = "NDSEmuOpenButton";
-            this.NDSEmuOpenButton.Size = new System.Drawing.Size(115, 23);
+            this.NDSEmuOpenButton.Size = new System.Drawing.Size(130, 30);
             this.NDSEmuOpenButton.TabIndex = 20;
             this.NDSEmuOpenButton.Text = "Open the Emulator";
+            this.NDSEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NDSEmuOpenButton.UseVisualStyleBackColor = true;
             this.NDSEmuOpenButton.Click += new System.EventHandler(this.NDSEmuOpenButton_Click);
             // 
@@ -755,11 +787,13 @@
             // 
             // NDSOpenFileButton
             // 
+            this.NDSOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("NDSOpenFileButton.Image")));
             this.NDSOpenFileButton.Location = new System.Drawing.Point(12, 114);
             this.NDSOpenFileButton.Name = "NDSOpenFileButton";
-            this.NDSOpenFileButton.Size = new System.Drawing.Size(120, 23);
+            this.NDSOpenFileButton.Size = new System.Drawing.Size(120, 30);
             this.NDSOpenFileButton.TabIndex = 17;
             this.NDSOpenFileButton.Text = "Open File";
+            this.NDSOpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NDSOpenFileButton.UseVisualStyleBackColor = true;
             this.NDSOpenFileButton.Click += new System.EventHandler(this.NDSOpenFileButton_Click);
             // 
@@ -777,11 +811,13 @@
             // 
             // NDSBackButton
             // 
+            this.NDSBackButton.Image = ((System.Drawing.Image)(resources.GetObject("NDSBackButton.Image")));
             this.NDSBackButton.Location = new System.Drawing.Point(12, 12);
             this.NDSBackButton.Name = "NDSBackButton";
-            this.NDSBackButton.Size = new System.Drawing.Size(75, 23);
+            this.NDSBackButton.Size = new System.Drawing.Size(75, 29);
             this.NDSBackButton.TabIndex = 15;
             this.NDSBackButton.Text = "Back";
+            this.NDSBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NDSBackButton.UseVisualStyleBackColor = true;
             this.NDSBackButton.Click += new System.EventHandler(this.NDSBackButton_Click);
             // 
@@ -805,11 +841,13 @@
             // 
             // genesisEmuOpenButton
             // 
+            this.genesisEmuOpenButton.Image = ((System.Drawing.Image)(resources.GetObject("genesisEmuOpenButton.Image")));
             this.genesisEmuOpenButton.Location = new System.Drawing.Point(150, 120);
             this.genesisEmuOpenButton.Name = "genesisEmuOpenButton";
-            this.genesisEmuOpenButton.Size = new System.Drawing.Size(115, 23);
+            this.genesisEmuOpenButton.Size = new System.Drawing.Size(130, 33);
             this.genesisEmuOpenButton.TabIndex = 20;
             this.genesisEmuOpenButton.Text = "Open the Emulator";
+            this.genesisEmuOpenButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.genesisEmuOpenButton.UseVisualStyleBackColor = true;
             this.genesisEmuOpenButton.Click += new System.EventHandler(this.genesisEmuOpenButton_Click);
             // 
@@ -835,11 +873,13 @@
             // 
             // genesisOpenFileButton
             // 
+            this.genesisOpenFileButton.Image = ((System.Drawing.Image)(resources.GetObject("genesisOpenFileButton.Image")));
             this.genesisOpenFileButton.Location = new System.Drawing.Point(13, 120);
             this.genesisOpenFileButton.Name = "genesisOpenFileButton";
-            this.genesisOpenFileButton.Size = new System.Drawing.Size(120, 23);
+            this.genesisOpenFileButton.Size = new System.Drawing.Size(120, 33);
             this.genesisOpenFileButton.TabIndex = 17;
             this.genesisOpenFileButton.Text = "Open File";
+            this.genesisOpenFileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.genesisOpenFileButton.UseVisualStyleBackColor = true;
             this.genesisOpenFileButton.Click += new System.EventHandler(this.genesisOpenFileButton_Click);
             // 
@@ -857,11 +897,13 @@
             // 
             // genesisBackButton
             // 
+            this.genesisBackButton.Image = ((System.Drawing.Image)(resources.GetObject("genesisBackButton.Image")));
             this.genesisBackButton.Location = new System.Drawing.Point(13, 18);
             this.genesisBackButton.Name = "genesisBackButton";
-            this.genesisBackButton.Size = new System.Drawing.Size(75, 23);
+            this.genesisBackButton.Size = new System.Drawing.Size(75, 30);
             this.genesisBackButton.TabIndex = 15;
             this.genesisBackButton.Text = "Back";
+            this.genesisBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.genesisBackButton.UseVisualStyleBackColor = true;
             this.genesisBackButton.Click += new System.EventHandler(this.genesisBackButton_Click);
             // 

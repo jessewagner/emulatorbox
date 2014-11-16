@@ -5939,6 +5939,37 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
   <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>114, 17</value>
   </metadata>
+  <data name="nesBackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAADbSURBVDhPpZNJCgIxEEWDqGcRh9Mp3kEEB9CFG6/hcA2HS/RO
+        BRcq+n9INb+1GgUfvEX9rgRSnQSHNhzDPcySOziCTVhKHc7gHT5L5LcprMECXLyF3iLPNeSanAX0GlXD
+        6nmsQAc+oDZ7GlbzOHEmPJM20qGTGZpxsOEoAeWGRDNqaMa/E84SDBgktJEamp0YXFKxhBUGX/jYwI7Q
+        ZfEDugEvW2GIuok2lhmH2IJ6+3qQaKPnDTZgZAL1Y/+t9uSvzuHd3kCv0XMFq7DAX49Jsed8gNckp+08
+        5xBeGmGhHOxureEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="nesOpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAD3SURBVDhPldK/SYRBEIbxxQIswSbswD9gJIgGWoGeiaG2oCVo
+        E4ZiCXImFqCYGNxdIhgoKPo8sLvMfQyHN/CD3Zl3vgv2yoJawRUu63mpWsUdfivP9v5Va3hCW27sOVtY
+        63jDcLlxZiatXXwgW4zMmJ2rM3wjW8iYdafXBX6QhTNmz9HrFnt4R7YQmTHrTi8HD9jGa71nnG3BrPde
+        LfCMDYxDr7G3iZfQ6xWDE+zgPvQ823MWs71i8wsj+Gs3uK7nUziL2V6tMcMRHuFTncCPebbnzEz6AQOH
+        mNZ7xpkZs957+STH+MRwaciM2blnPMCyf6T9Ukr5A/ImoE4JpNjPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="nesEmuOpenButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="mainPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/7gAOQWRvYmUAZAAAAAAB/+ENDkV4aWYAAE1NACoAAAAIAAwBAAAD
@@ -14585,6 +14616,17 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         giAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAI
         giAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgvgVUlL/H2tVBIIoyLXcAAAAAElFTkSu
         QmCC
+</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -23725,6 +23767,27 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         HoAAHcuCKqwiIpQIiIP/2Q==
 </value>
   </data>
+  <data name="neogeoEmuOpenButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="neogeoBackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAADbSURBVDhPpZNJCgIxEEWDqGcRh9Mp3kEEB9CFG6/hcA2HS/RO
+        BRcq+n9INb+1GgUfvEX9rgRSnQSHNhzDPcySOziCTVhKHc7gHT5L5LcprMECXLyF3iLPNeSanAX0GlXD
+        6nmsQAc+oDZ7GlbzOHEmPJM20qGTGZpxsOEoAeWGRDNqaMa/E84SDBgktJEamp0YXFKxhBUGX/jYwI7Q
+        ZfEDugEvW2GIuok2lhmH2IJ6+3qQaKPnDTZgZAL1Y/+t9uSvzuHd3kCv0XMFq7DAX49Jsed8gNckp+08
+        5xBeGmGhHOxureEAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -24475,8 +24538,39 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
   <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>211, 17</value>
   </metadata>
+  <data name="snesOpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAD3SURBVDhPldK/SYRBEIbxxQIswSbswD9gJIgGWoGeiaG2oCVo
+        E4ZiCXImFqCYGNxdIhgoKPo8sLvMfQyHN/CD3Zl3vgv2yoJawRUu63mpWsUdfivP9v5Va3hCW27sOVtY
+        63jDcLlxZiatXXwgW4zMmJ2rM3wjW8iYdafXBX6QhTNmz9HrFnt4R7YQmTHrTi8HD9jGa71nnG3BrPde
+        LfCMDYxDr7G3iZfQ6xWDE+zgPvQ823MWs71i8wsj+Gs3uK7nUziL2V6tMcMRHuFTncCPebbnzEz6AQOH
+        mNZ7xpkZs957+STH+MRwaciM2blnPMCyf6T9Ukr5A/ImoE4JpNjPAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="label11.Text" xml:space="preserve">
     <value>To play a game for the Super Nintendo Entertainment System, click on the Open File button below and select the game you would like to play. Otherwise, click the button labeled Back to go back to the previous screen.</value>
+  </data>
+  <data name="snesBackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAADbSURBVDhPpZNJCgIxEEWDqGcRh9Mp3kEEB9CFG6/hcA2HS/RO
+        BRcq+n9INb+1GgUfvEX9rgRSnQSHNhzDPcySOziCTVhKHc7gHT5L5LcprMECXLyF3iLPNeSanAX0GlXD
+        6nmsQAc+oDZ7GlbzOHEmPJM20qGTGZpxsOEoAeWGRDNqaMa/E84SDBgktJEamp0YXFKxhBUGX/jYwI7Q
+        ZfEDugEvW2GIuok2lhmH2IJ6+3qQaKPnDTZgZAL1Y/+t9uSvzuHd3kCv0XMFq7DAX49Jsed8gNckp+08
+        5xBeGmGhHOxureEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="snesEmuOpenButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
+</value>
   </data>
   <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>211, 17</value>
@@ -25692,6 +25786,37 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
         nIQ3SJB/dRt9Y/ylVG/8Oz8P4hAmThZKlJ4JBdWU/wDm4Ps1Nl/dsnjHDgSwwWIXNiXU7qljuZAXtSb5
         ErUYM+ObCyFNnxsqKSBx85JVU0sOFGMnJkNkjxo/FdiehYwzGkn4/HJwrhKkM0chAyphf1FQE+Avxmk+
         s+JH7aw4WFCuPiY6hIYUFlVRzD/w+2zYduzy0P2W0/sPU2/j7//Z
+</value>
+  </data>
+  <data name="n64EmuOpenButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="n64OpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAD3SURBVDhPldK/SYRBEIbxxQIswSbswD9gJIgGWoGeiaG2oCVo
+        E4ZiCXImFqCYGNxdIhgoKPo8sLvMfQyHN/CD3Zl3vgv2yoJawRUu63mpWsUdfivP9v5Va3hCW27sOVtY
+        63jDcLlxZiatXXwgW4zMmJ2rM3wjW8iYdafXBX6QhTNmz9HrFnt4R7YQmTHrTi8HD9jGa71nnG3BrPde
+        LfCMDYxDr7G3iZfQ6xWDE+zgPvQ823MWs71i8wsj+Gs3uK7nUziL2V6tMcMRHuFTncCPebbnzEz6AQOH
+        mNZ7xpkZs957+STH+MRwaciM2blnPMCyf6T9Ukr5A/ImoE4JpNjPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="n64BackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAADbSURBVDhPpZNJCgIxEEWDqGcRh9Mp3kEEB9CFG6/hcA2HS/RO
+        BRcq+n9INb+1GgUfvEX9rgRSnQSHNhzDPcySOziCTVhKHc7gHT5L5LcprMECXLyF3iLPNeSanAX0GlXD
+        6nmsQAc+oDZ7GlbzOHEmPJM20qGTGZpxsOEoAeWGRDNqaMa/E84SDBgktJEamp0YXFKxhBUGX/jYwI7Q
+        ZfEDugEvW2GIuok2lhmH2IJ6+3qQaKPnDTZgZAL1Y/+t9uSvzuHd3kCv0XMFq7DAX49Jsed8gNckp+08
+        5xBeGmGhHOxureEAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="gameboyPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -27300,8 +27425,39 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
         PZVAH6VeUe+aMZoxis9TQUDFFFFMAooooAKKKKAP/9k=
 </value>
   </data>
+  <data name="gameboyEmuOpenButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="gameboyOpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAD3SURBVDhPldK/SYRBEIbxxQIswSbswD9gJIgGWoGeiaG2oCVo
+        E4ZiCXImFqCYGNxdIhgoKPo8sLvMfQyHN/CD3Zl3vgv2yoJawRUu63mpWsUdfivP9v5Va3hCW27sOVtY
+        63jDcLlxZiatXXwgW4zMmJ2rM3wjW8iYdafXBX6QhTNmz9HrFnt4R7YQmTHrTi8HD9jGa71nnG3BrPde
+        LfCMDYxDr7G3iZfQ6xWDE+zgPvQ823MWs71i8wsj+Gs3uK7nUziL2V6tMcMRHuFTncCPebbnzEz6AQOH
+        mNZ7xpkZs957+STH+MRwaciM2blnPMCyf6T9Ukr5A/ImoE4JpNjPAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="label15.Text" xml:space="preserve">
     <value>To play a game for the GameBoy or GameBoy Advance, click on the Open File button below and select the game you would like to play. Otherwise, click the button labeled Back to go back to the previous screen.</value>
+  </data>
+  <data name="gameboyBackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAADbSURBVDhPpZNJCgIxEEWDqGcRh9Mp3kEEB9CFG6/hcA2HS/RO
+        BRcq+n9INb+1GgUfvEX9rgRSnQSHNhzDPcySOziCTVhKHc7gHT5L5LcprMECXLyF3iLPNeSanAX0GlXD
+        6nmsQAc+oDZ7GlbzOHEmPJM20qGTGZpxsOEoAeWGRDNqaMa/E84SDBgktJEamp0YXFKxhBUGX/jYwI7Q
+        ZfEDugEvW2GIuok2lhmH2IJ6+3qQaKPnDTZgZAL1Y/+t9uSvzuHd3kCv0XMFq7DAX49Jsed8gNckp+08
+        5xBeGmGhHOxureEAAAAASUVORK5CYII=
+</value>
   </data>
   <data name="NDSPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -28106,6 +28262,37 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
         fc/kKKKAD/hnmz/59z+Qo/4Z5s/+fc/kKKKAD/hnmz/59z+QpD+zxaH/AJYbfqoNFFAB/wAM7WX8UOfo
         oo/4Z1se8B/IUUUATW37PNlD8wtk+pwDW/oHwis9OIxEFwOwHFFFAHVadokVhGMKM59BV/FFFABRRRQB
         /9k=
+</value>
+  </data>
+  <data name="NDSEmuOpenButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="NDSOpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAD3SURBVDhPldK/SYRBEIbxxQIswSbswD9gJIgGWoGeiaG2oCVo
+        E4ZiCXImFqCYGNxdIhgoKPo8sLvMfQyHN/CD3Zl3vgv2yoJawRUu63mpWsUdfivP9v5Va3hCW27sOVtY
+        63jDcLlxZiatXXwgW4zMmJ2rM3wjW8iYdafXBX6QhTNmz9HrFnt4R7YQmTHrTi8HD9jGa71nnG3BrPde
+        LfCMDYxDr7G3iZfQ6xWDE+zgPvQ823MWs71i8wsj+Gs3uK7nUziL2V6tMcMRHuFTncCPebbnzEz6AQOH
+        mNZ7xpkZs957+STH+MRwaciM2blnPMCyf6T9Ukr5A/ImoE4JpNjPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="NDSBackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAADbSURBVDhPpZNJCgIxEEWDqGcRh9Mp3kEEB9CFG6/hcA2HS/RO
+        BRcq+n9INb+1GgUfvEX9rgRSnQSHNhzDPcySOziCTVhKHc7gHT5L5LcprMECXLyF3iLPNeSanAX0GlXD
+        6nmsQAc+oDZ7GlbzOHEmPJM20qGTGZpxsOEoAeWGRDNqaMa/E84SDBgktJEamp0YXFKxhBUGX/jYwI7Q
+        ZfEDugEvW2GIuok2lhmH2IJ6+3qQaKPnDTZgZAL1Y/+t9uSvzuHd3kCv0XMFq7DAX49Jsed8gNckp+08
+        5xBeGmGhHOxureEAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="genesisPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -31707,6 +31894,37 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
         8eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcv
         Xrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLFixcvXrx48eLF
         ixcvXrx48eLFixcvXrx48eLFixcvXrx48eLlwJRI5P8BRrFnPbvSElgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="genesisEmuOpenButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAErSURBVDhPpdPJSgNBFIXhWqgokpU+hDg8QoKiz+UAYhaCAySL
+        vINkEXBI9C0c9iIo6CoiuFDR/7R1QlWTduOBj9y+XZ103XSHMVnGIW7wEl3jAIuozBRa+MR3BZ07xiSy
+        6OIByhesY6PUkwvomlE6SBdcxk9H9VX8tDaKrOALPrEFRbXjehtep+0UM9Ge3DxTg2iPvkhR7X3r9r1e
+        gw13SWNNDbIHHTuqd3/LbCb6d8Jr0phTgzxAx6uR6nso8/D6oRpvSWNWDfIE9+wRSg3u6cezLdTVIE24
+        Z9qW4jsSPWzZEHtqEA1MX/IcqfYQT+H1xRCXkD59m6jKDrzuAwsocgSfkBNoO9OYQQNdpGv2MYpur490
+        wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="genesisOpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAD3SURBVDhPldK/SYRBEIbxxQIswSbswD9gJIgGWoGeiaG2oCVo
+        E4ZiCXImFqCYGNxdIhgoKPo8sLvMfQyHN/CD3Zl3vgv2yoJawRUu63mpWsUdfivP9v5Va3hCW27sOVtY
+        63jDcLlxZiatXXwgW4zMmJ2rM3wjW8iYdafXBX6QhTNmz9HrFnt4R7YQmTHrTi8HD9jGa71nnG3BrPde
+        LfCMDYxDr7G3iZfQ6xWDE+zgPvQ823MWs71i8wsj+Gs3uK7nUziL2V6tMcMRHuFTncCPebbnzEz6AQOH
+        mNZ7xpkZs957+STH+MRwaciM2blnPMCyf6T9Ukr5A/ImoE4JpNjPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="genesisBackButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAADbSURBVDhPpZNJCgIxEEWDqGcRh9Mp3kEEB9CFG6/hcA2HS/RO
+        BRcq+n9INb+1GgUfvEX9rgRSnQSHNhzDPcySOziCTVhKHc7gHT5L5LcprMECXLyF3iLPNeSanAX0GlXD
+        6nmsQAc+oDZ7GlbzOHEmPJM20qGTGZpxsOEoAeWGRDNqaMa/E84SDBgktJEamp0YXFKxhBUGX/jYwI7Q
+        ZfEDugEvW2GIuok2lhmH2IJ6+3qQaKPnDTZgZAL1Y/+t9uSvzuHd3kCv0XMFq7DAX49Jsed8gNckp+08
+        5xBeGmGhHOxureEAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
