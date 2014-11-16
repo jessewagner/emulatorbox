@@ -26,53 +26,175 @@ namespace emulator_program
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            NES nes = new NES();
-            nes.ShowDialog();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            SNES snes = new SNES();
-            snes.ShowDialog();
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            N64 n64 = new N64();
-            n64.ShowDialog();
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            GameBoy gameboy = new GameBoy();
-            gameboy.ShowDialog();
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            NDS nds = new NDS();
-            nds.ShowDialog();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            Genesis genesis = new Genesis();
-            genesis.ShowDialog();
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            NEOGEO neogeo = new NEOGEO();
-            neogeo.ShowDialog();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        #region "nes section"
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            nesPanel.Visible = true;
+            mainPanel.Visible = false;
+        }
+
+        private void nesBackButton_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            nesPanel.Visible = false;
+        }
+
+        private void nesOpenFileButton_Click(object sender, EventArgs e)
+        {
+            fileOpener("nestopia.exe", "Nestopia 1.4", "Nintendo Roms");
+        }
+
+        private void nesEmuOpenButton_Click(object sender, EventArgs e)
+        {
+            emulatorOpener("nestopia.exe", "Nestopia 1.4");
+        }
+        #endregion
+
+        #region "snes section"
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            snesPanel.Visible = true;
+            mainPanel.Visible = false;
+        }
+
+        private void snesBackButton_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            snesPanel.Visible = false;
+        }
+
+        private void snesOpenFileButton_Click(object sender, EventArgs e)
+        {
+            fileOpener("snes9x.exe", "Snes9x 1.52", "Super Nintendo Roms");
+        }
+
+        private void snesEmuOpenButton_Click(object sender, EventArgs e)
+        {
+            emulatorOpener("snes9x.exe", "Snes9x 1.52");
+        }
+        #endregion
+
+        #region "n64 section"
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            n64Panel.Visible = true;
+            mainPanel.Visible = false;
+        }
+
+        private void n64BackButton_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            n64Panel.Visible = false;
+        }
+
+        private void n64OpenFileButton_Click(object sender, EventArgs e)
+        {
+            fileOpener("Project64.exe", "Project64", "Nintendo 64 Roms");
+        }
+
+        private void n64EmuOpenButton_Click(object sender, EventArgs e)
+        {
+            emulatorOpener("Project64.exe", "Project64");
+        }
+        #endregion
+
+        #region "gameboy section"
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            gameboyPanel.Visible = true;
+            mainPanel.Visible = false;
+        }
+
+        private void gameboyBackButton_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            gameboyPanel.Visible = false;
+        }
+
+        private void gameboyOpenFileButton_Click(object sender, EventArgs e)
+        {
+            fileOpener("VisualBoyAdvance-M.exe", "VisualBoyAdvance-M", "Nintendo Advance Roms");
+        }
+
+        private void gameboyEmuOpenButton_Click(object sender, EventArgs e)
+        {
+            emulatorOpener("VisualBoyAdvance-M.exe", "VisualBoyAdvance-M");
+        }
+        #endregion
+
+        #region "NDS section"
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            NDSPanel.Visible = true;
+            mainPanel.Visible = false;
+        }
+
+        private void NDSBackButton_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            NDSPanel.Visible = false;
+        }
+
+        private void NDSOpenFileButton_Click(object sender, EventArgs e)
+        {
+            fileOpener("DeSmuME_0.9.10_x86.exe", "DeSmu", "Nintendo DS Roms");
+        }
+
+        private void NDSEmuOpenButton_Click(object sender, EventArgs e)
+        {
+            emulatorOpener("DeSmuME_0.9.10_x86.exe", "DeSmu");
+        }
+        #endregion
+
+        #region "genesis section"
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            genesisPanel.Visible = true;
+            mainPanel.Visible = false;
+        }
+
+        private void genesisBackButton_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            genesisPanel.Visible = false;
+        }
+
+        private void genesisOpenFileButton_Click(object sender, EventArgs e)
+        {
+            fileOpener("Fusion.exe", "Fusion364", "Genesis Roms");
+        }
+
+        private void genesisEmuOpenButton_Click(object sender, EventArgs e)
+        {
+            emulatorOpener("Fusion.exe", "Fusion364");
+        }
+        #endregion
+
+        #region "neogeo section"
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            neogeoPanel.Visible = true;
+            mainPanel.Visible = false;
+        }
+
+        private void neogeoBackButton_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            neogeoPanel.Visible = false;
+        }
+
+        private void neogeoEmuOpenButton_Click(object sender, EventArgs e)
+        {
+            emulatorOpener("WinKawaks.exe", "Kawaks");
+        }
+        #endregion
+
+        #region "fileOpener section"
         public static void fileOpener(string fileName, string pathName, string searchPath)
         {
             string myFileName = fileName;
@@ -99,7 +221,9 @@ namespace emulator_program
                 }
             }
         }
+        #endregion
 
+        #region "emulatorOpener section"
         public static void emulatorOpener(string fileName, string pathName)
         {
             string myFileName = fileName;
@@ -107,8 +231,16 @@ namespace emulator_program
             root = root.Remove(3);
             string path = Path.Combine(root, pathName, myFileName);
             Process startProgram = new Process();
-            startProgram.StartInfo.FileName = path;
-            startProgram.Start();
+            try
+            {
+                startProgram.StartInfo.FileName = path;
+                startProgram.Start();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+        #endregion
     }
 }
