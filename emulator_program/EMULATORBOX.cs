@@ -197,28 +197,30 @@ namespace emulator_program
         #region "fileOpener section"
         public static void fileOpener(string fileName, string pathName, string searchPath)
         {
-            string myFileName = fileName;
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string FBDpath = Path.Combine(root, "Roms", searchPath);
-            OpenFileDialog OFD = new OpenFileDialog();
-            OFD.Multiselect = false;
-            OFD.InitialDirectory = FBDpath;
-            if (OFD.ShowDialog() == DialogResult.OK)
+            try
             {
-                try
+                string myFileName = fileName;
+                string root = Path.GetFullPath(myFileName);
+                root = root.Remove(3);
+                string FBDpath = Path.Combine(root, "RomFiles", searchPath);
+                OpenFileDialog OFD = new OpenFileDialog();
+                OFD.Multiselect = false;
+                OFD.InitialDirectory = FBDpath;
+                if (OFD.ShowDialog() == DialogResult.OK)
                 {
-                    string path = Path.Combine(root, pathName, myFileName);
-                    string path2 = string.Format("\"{0}\"", OFD.FileName);
-                    Process startProgram = new Process();
-                    ProcessStartInfo startInfo = new ProcessStartInfo(path);
-                    startInfo.Arguments = path2;
-                    Process.Start(startInfo);
+                
+                        string path = Path.Combine(root, pathName, myFileName);
+                        string path2 = string.Format("\"{0}\"", OFD.FileName);
+                        Process startProgram = new Process();
+                        ProcessStartInfo startInfo = new ProcessStartInfo(path);
+                        startInfo.Arguments = path2;
+                        Process.Start(startInfo);
+                
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
         #endregion
@@ -226,13 +228,13 @@ namespace emulator_program
         #region "emulatorOpener section"
         public static void emulatorOpener(string fileName, string pathName)
         {
-            string myFileName = fileName;
-            string root = Path.GetFullPath(myFileName);
-            root = root.Remove(3);
-            string path = Path.Combine(root, pathName, myFileName);
-            Process startProgram = new Process();
             try
             {
+                string myFileName = fileName;
+                string root = Path.GetFullPath(myFileName);
+                root = root.Remove(3);
+                string path = Path.Combine(root, pathName, myFileName);
+                Process startProgram = new Process();
                 startProgram.StartInfo.FileName = path;
                 startProgram.Start();
             }
