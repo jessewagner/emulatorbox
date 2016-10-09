@@ -5875,64 +5875,6 @@
         QmCC
 </value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>The Nintendo Entertainment System (also abbreviated as NES) is an 8-bit video game console that was developed and manufactured by Nintendo. It was initially released in Japan as the Family Computer (also known as the Famicom and abbreviated as FC) on July 15, 1983, and was later released in North America during 1985, in Europe during 1986, and Australia in 1987. In South Korea, it was known as the Hyundai Comboy and was distributed by SK Hynix which then was known as Hyundai Electronics. It was succeeded by the Super Famicom/Super Nintendo Entertainment System. 
-
-Development
-Following a series of arcade game successes in the early 1980s, Nintendo made plans to create a cartridge-based console called the Famicom. Masayuki Uemura designed the system. Original plans called for an advanced 16-bit system which would function as a full-fledged computer with a keyboard and floppy disk drive, but Nintendo president Hiroshi Yamauchi rejected this and instead decided to go for a cheaper, more conventional cartridge-based game console as he felt that features such as keyboards and disks were intimidating to non-technophiles. A test model was constructed in October 1982 to verify the functionality of the hardware, after which work began on programming tools. Because 65xx CPUs had not been manufactured or sold in Japan up to that time, no cross-development software was available and it had to be produced from scratch. Early Famicom games were written on a system that ran on an NEC PC-8001 computer and LEDs on a grid were used with a digitizer to design graphics as no software design tools for this purpose existed at that time.
-
-The code name for the project was "GameCom", but Masayuki Uemura's wife proposed the name "Famicom", arguing that "In Japan, 'pasokon' is used to mean a personal computer, but it is neither a home or personal computer. Perhaps we could say it is a family computer." Meanwhile, Hiroshi Yamauchi decided that the console should use a red and white theme after seeing a billboard for DX Antenna which used those colors.
-
-Original plans called for the Famicom's cartridges to be the size of a cassette tape, but ultimately they ended up being twice as big. Careful design attention was paid to the cartridge connectors since loose and faulty connections often plagued arcade machines. As it necessitated taking 60 connection lines for the memory and expansion, Nintendo decided to produce their own connectors in-house rather than use ones from an outside supplier.
-
-The game pad controllers were more-or-less copied directly from the Game &amp; Watch machines, although the Famicom design team originally wanted to use arcade-style joysticks, even taking apart ones from American game consoles to see how they worked. However, it was eventually decided that children might step on joysticks left on the floor and their durability was also questioned. Katsuyah Nakawaka attached a Game &amp; Watch D-pad to the Famicom prototype and found that it was easy to use and had no discomfort. Ultimately though, they did install a 15-pin expansion port on the front of the console so that an arcade-style joystick could be used optionally. The controllers were hard-wired to the console with no connectors for cost reasons.
-
-Uemura added an eject lever to the cartridge slot which was not really necessary, but he felt that children could be entertained by pressing it. He also added a microphone to the second controller with the idea that it could be used to make players' voices sound through the TV speaker.
-
-Release
-The console was released on July 15, 1983 as the Famicom (lit. Family Computer) for ¥14,800 alongside three ports of Nintendo's successful arcade games Donkey Kong, Donkey Kong Jr. and Popeye. The Famicom was slow to gather momentum; a bad chip set caused the initial release of the system to crash. Following a product recall and a reissue with a new motherboard, the Famicom’s popularity soared, becoming the best-selling game console in Japan by the end of 1984.[14]
-
-Encouraged by these successes, Nintendo soon turned its attention to the North American market. Nintendo entered into negotiations with Atari to release the Famicom under Atari’s name as the name Nintendo Advanced Video Gaming System. The deal was set to be finalized and signed at the Summer Consumer Electronics Show in June 1983. However, Atari discovered at that show that its competitor Coleco was illegally demonstrating its Coleco Adam computer with Nintendo's Donkey Kong game. This violation of Atari's exclusive license with Nintendo to publish the game for its own computer systems delayed the implementation of Nintendo's game console marketing contract with Atari. Atari's CEO Ray Kassar was fired the next month, so the deal went nowhere, and Nintendo decided to market its system on its own.[15]g[›]
-
-Subsequent plans to market a Famicom console in North America featuring a keyboard, cassette data recorder, wireless joystick controller and a special BASIC cartridge under the name "Nintendo Advanced Video System" likewise never materialized.[16] By the beginning of 1985, the Famicom had sold more than 2.5 million units in Japan and Nintendo soon announced plans to release it in North America as the Advanced Video Entertainment System (AVS) that same year. The American video game press was skeptical that the console could have any success in the region, with the March 1985 issue of Electronic Games magazine stating that "the videogame market in America has virtually disappeared" and that "this could be a miscalculation on Nintendo's part."[17]
-
-At June 1985's Consumer Electronics Show (CES), Nintendo unveiled the American version of its Famicom. This is the system which would eventually be officially deployed as the Nintendo Entertainment System, or the colloquial "NES". Nintendo seeded these first systems to limited American test markets starting in New York City on October 18, 1985, following up with a full-fledged North American release of the console in February of the following year.[18] Nintendo released 18 launch titles: 10-Yard Fight, Baseball, Clu Clu Land, Duck Hunt, Donkey Kong Jr. Math, Excitebike, Golf, Gyromite, Hogan’s Alley, Ice Climber, Kung Fu, Mach Rider, Pinball, Stack-Up, Tennis, Wild Gunman, Wrecking Crew, and Super Mario Bros..[19]h[›] Some varieties of these launch games contained Famicom chips with an adapter inside the cartridge so they would play on North American consoles, which is why the title screen of "Gyromite" has the Famicom title "Robot Gyro" and the title screen of "Stack-Up" has the Famicom title "Robot Block".
-
-The system was originally targeted for release in the spring of 1985, but the release date was pushed back. After test-marketing in the New York City area in late fall, retailers had reportedly stated the system "failed miserably".[21] Nintendo tried a second time, the system was test-marketed further beginning in February 1986, with the nationwide release occurring in September 1986
-
-The system's launch represented not only a new product, but also a reframing of the severely damaged home video game market segment as a whole. The video game market crash of 1983 had occurred in significant part due to a lack of consumer and retailer confidence in video games, which had in turn been due partially to confusion and misrepresentation in the marketing of video games. Prior to the NES, the packaging of many video games presented bombastic artwork which exaggerated the graphics of the actual game. In terms of product identity, a single game such as Pac-Man would appear in many versions on many different game consoles and computers, with large variations in graphics, sound, and general quality between the versions. By stark contrast, Nintendo's marketing strategy aimed to regain consumer and retailer confidence, by delivering a singular platform whose technology was not in need of heavy exaggeration and whose qualities were clearly defined.
-
-To differentiate Nintendo's new home platform from the early 1980s' common perception of a beleaguered and frivolous video game market, the company freshened its product nomenclature and positioning, and it established a rigorous product approval and licensing policy. The overall system was referred to as an "Entertainment System" instead of a "video game system", which was centered upon a machine called a "Control Deck" instead of a "console", and which featured software cartridges called "Game Paks" instead of "video games". The 10NES lockout chip system acted as a lock-and-key coupling of each Game Pak and Control Deck, deterring the copying or production of NES games which had not first achieved Nintendo's licensed approval. The packaging of the launch lineup of NES games bore pictures of a very close representation of the actual onscreen graphics of the game, which were of sufficiently recognizable quality on their own. Symbols on the launch games' packaging clearly indicated the genre of the game, in order to reduce consumer confusion. A 'seal of quality' was printed on all appropriately licensed game and accessory packaging. The initial seal stated, "This seal is your assurance that Nintendo has approved and guaranteed the quality of this product". This text was later changed to "Official Nintendo Seal of Quality".
-
-For more details on this topic, see Nintendo Entertainment System § Third-party licensing.
-Unlike with the Famicom, Nintendo of America marketed the console primarily to children, instituting a rather strict policy of censoring profanity, sexual, religious, or political content in games. The most famous case of this was Lucasfilm's attempts to port Maniac Mansion (a game with a considerable amount of unacceptable material) to the NES. NOA continued their censorship policy until 1994 with the advent of the Entertainment Software Rating Board system.
-
-The optional Robotic Operating Buddy, or R.O.B., was part of a marketing plan to portray the NES's technology as being novel and sophisticated when compared to previous game consoles, and to portray its position as being within reach of the better established toy market. While at first, the American public exhibited limited excitement for the console itself, peripherals such as the light gun and R.O.B. also attracted extensive attention.[22]
-
-In Europe and Australia, the system was released to two separate marketing regions. One region consisted of most of mainland Europe (excluding Italy), and distribution there was handled by a number of different companies, with Nintendo responsible for most cartridge releases. Most of this region saw a 1986 release. Mattel handled distribution for the other region, consisting of the United Kingdom, Canada, Italy, Australia and New Zealand, starting the following year. Not until the 1990s did Nintendo's newly created European branch direct distribution throughout Europe.
-
-For its complete North American release, the Nintendo Entertainment System was progressively released over the ensuing years in four different bundles: the Deluxe Set, the Control Deck, the Action Set and the Power Set. The Deluxe Set, retailing at US$199.99 (equivalent to $474 in 2014), included R.O.B., a light gun called the NES Zapper, two controllers, and two Game Paks: Gyromite, and Duck Hunt. The Basic Set, retailing at US$89.99 with no game, and US$99.99 bundled with "Super Mario Bros." The Action Set, retailing in 1988 for US$149.99, came with the Control Deck, two game controllers, an NES Zapper, and a dual Game Pak containing both Super Mario Bros. and Duck Hunt.[1][24] In 1989, the Power Set included the console, two game controllers, a NES Zapper, a Power Pad, and a triple Game Pak containing Super Mario Bros, Duck Hunt, and World Class Track Meet. In 1990, a Sports Set bundle was released, including the console, an NES Satellite infrared wireless multitap adapter, four game controllers, and a dual Game Pak containing Super Spike V'Ball and Nintendo World Cup.[25] Two more bundle packages were later released using the original model NES console. The Challenge Set of 1992 included the console, two controllers, and a Super Mario Bros. 3 Game Pak for a retail price of US$89.99. The Basic Set, first released in 1987, was repackaged for a retail US$89.99. It included only the console and two controllers, and no longer was bundled with a cartridge.[25] Instead, it contained a book called the Official Nintendo Player's Guide, which contained detailed information for every NES game made up to that point.
-
-Finally, the console was redesigned for both the North American and Japanese markets as part of the final Nintendo-released bundle package. The package included the new style NES-101 console, and one redesigned "dogbone" game controller. Released in October 1993 in North America, this final bundle retailed for US$49.99 and remained in production until the discontinuation of the NES in 1995.
-
-Reception
-By 1988 industry observers stated that the NES's popularity had grown so quickly that the market for Nintendo cartridges was larger than that for all home computer software.[26][27] Compute! reported in 1989 that Nintendo had sold seven million NES systems in 1988, almost as many as the number of Commodore 64s sold in its first five years.[28] "Computer game makers [are] scared stiff", the magazine said, stating that Nintendo's popularity caused most to have poor sales during the previous Christmas and resulting in serious financial problems for some.[29] By 1990 30% of American households owned the NES, compared to 23% for all personal computers.[30]
-
-Despite the system’s lackluster performance outside of Japan and North America, by 1990 the NES had outsold all previously released consoles worldwide.[31][better source needed] The slogan for this brand was It can't be beaten.[32] The Nintendo Entertainment System was not available in the Soviet Union.
-
-As the 1990s dawned, gamers predicted that competition from technologically superior systems such as the 16-bit Sega Mega Drive/Genesis would mean the immediate end of the NES’s dominance. Instead, during the first year of Nintendo's successor console the Super Famicom (named the Super Nintendo outside Japan), the Famicom remained the second highest-selling video game console in Japan, outselling the newer and more powerful NEC PC Engine and Sega Mega Drive by a wide margin.[33] The console remained popular in Japan and North America until late 1993, when the demand for new NES software abruptly plummeted.[33] The last game released in Japan was Takahashi Meijin no Bōken Jima IV (Adventure Island IV), while in North America, Wario's Woods was the last licensed game.[34] In the wake of ever decreasing sales and the lack of new software titles, Nintendo of America officially discontinued the NES by 1995.[1] Despite this, Nintendo of Japan kept producing new Nintendo Famicom units until September 2003,[35] and continued to repair Famicom consoles until October 31, 2007, attributing the decision to discontinue support because of insufficient supplies of parts.
-
-Legacy
-The NES was released after the "video game crash" of the early '80s, whereupon many retailers and adults had regarded electronic games as being merely a passing fad,[38] and many believed at first that the NES was another fad.[29] Before the NES/Famicom, Nintendo was known as a moderately successful Japanese toy and playing card manufacturer, and the popularity of the NES/Famicom helped the company grow into an internationally recognized name almost synonymous with video games as Atari had been during the 2600 era[39] and set the stage for Japanese dominance of the video game industry.[40] With the NES, Nintendo also changed the relationship of console manufacturers and third-party software developers by restricting developers from publishing and distributing software without licensed approval. This led to higher quality software titles, which helped to change the attitude of a public that had grown weary from poorly produced titles for other game systems of the day.[41]
-
-The NES hardware was also very influential. Nintendo chose the name "Nintendo Entertainment System" for the US market and redesigned the system so it would not give the appearance of a child's toy. The front-loading cartridge input allowed it to be used more easily in a TV stand with other entertainment devices, such as a video cassette player.[42][43][44]
-
-There were many prominent game franchises that originated on the NES. The system's hardware limitations led to game design similarities that still influence video game design and culture. Some of the more important franchises that debuted on the NES were Nintendo's own Super Mario Bros.,[45] The Legend of Zelda[46] and Metroid,[47] Capcom's Mega Man[48] franchise, Konami's Castlevania[49] franchise, Square's Final Fantasy[50] and Enix's Dragon Quest[51] franchises. All of these still exist today.
-
-NES imagery, especially its controller, has become a popular motif for a variety of products,[52][53][54] including Nintendo's own Game Boy Advance.[55] Clothing, accessories, and food items adorned with NES-themed imagery are still produced and sold in stores. Such items include hats, shirts, underwear, wallets, wrist-bands, belt buckles, tins containing mint candy, and energy drinks.
-
-The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entertainment_System</value>
-  </data>
   <data name="label9.Text" xml:space="preserve">
     <value>To play a game for the Nintendo Entertainment System, click on the Open File button below and select the game you would like to play. Otherwise, click the button labeled Back to go back to the previous screen.</value>
   </data>
@@ -5967,9 +5909,6 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         wV/OMYEs/3qZ0vh1vsV7pGmPeZ1D+AE0YJI5pzmSwwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="mainPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/7gAOQWRvYmUAZAAAAAAB/+ENDkV4aWYAAE1NACoAAAAIAAwBAAAD
@@ -8861,9 +8800,6 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         /9k=
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="nesPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAyAAAAIuCAYAAABHDWysAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -14621,6 +14557,9 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         QmCC
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="closeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -23791,9 +23730,6 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         5xBeGmGhHOxureEAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="snesPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYG
@@ -24492,48 +24428,6 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Nintendo_Entert
         hE3hYbqC+zJRwpRJ4+D+8PtFkd7MOaVYEUnt9H74L4hYPWVPxhwhEER42N4g9E1g+IxJ4WBYtASdAH/7
         L//Z
 </value>
-  </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value>The Super Nintendo Entertainment System (also known as the Super NES, SNES[b] or Super Nintendo) is a 16-bit video game console developed by Nintendo that was released in 1990 in Japan, 1991 in North America, 1992 in Europe and Australasia (Oceania), and 1993 in South America. In Japan, the system is called the Super Famicom officially adopting the abbreviated name of its predecessor, the Family Computer), or SFC for short. In South Korea, it is known as the Super Comboy and was distributed by Hyundai Electronics. Although each version is essentially the same, several forms of regional lockout prevent the different versions from being compatible with one another.
-
-The Super Nintendo Entertainment System is Nintendo's second home console, following the Nintendo Entertainment System (NES). The console introduced advanced graphics and sound capabilities compared with other consoles at the time. Additionally, development of a variety of enhancement chips (which were integrated on game circuit boards) helped to keep it competitive in the marketplace.
-
-The SNES was a global success, becoming the best-selling console of the 16-bit era despite its relatively late start and the fierce competition it faced in North America and Europe from Sega's Genesis/Mega Drive console. The SNES remained popular well into the 32-bit era, and continues to be popular among fans, collectors, retro gamers, and emulation enthusiasts, some of whom are still making homebrew ROM images.
-
-History
-To compete with the popular NES/Famicom, NEC launched the TurboGrafx-16 in 1987, and Sega followed suit with the Sega Genesis/Mega Drive in 1988. Both systems were built on 16-bit architectures and offered improved graphics and sound over the 8-bit NES. However, it took several years for Sega's system to become successful.[9] Nintendo executives were in no rush to design a new system, but they reconsidered when they began to see their dominance in the market slipping.
-
-Launch
-Designed by Masayuki Uemura, the designer of the original Famicom, the Super Famicom was released in Japan on Wednesday, November 21, 1990 for ¥25,000 (US$210). It was an instant success; Nintendo's initial shipment of 300,000 units sold out within hours, and the resulting social disturbance led the Japanese government to ask video game manufacturers to schedule future console releases on weekends.[11] The system's release also gained the attention of the Yakuza, leading to a decision to ship the devices at night to avoid robbery.[12]
-
-With the Super Famicom quickly outselling its chief rivals, Nintendo reasserted itself as the leader of the Japanese console market.[13] Nintendo's success was partially due to its retention of most of its key third-party developers from its earlier system, including Capcom, Konami, Tecmo, Square, Koei, and Enix.[14]
-
-
-"Nintendo's strongest selling point, however, was the game that came packed in with the Super NES console—Super Mario World."[15]
-On August 23, 1991,[a] Nintendo released the Super Nintendo Entertainment System, a redesigned version of the Super Famicom, in North America for US$199. The SNES was released in the United Kingdom and Ireland in April 1992 for GB£150, with a German release following a few weeks later. The PAL region versions of the console use the Japanese Super Famicom design, except for labeling and the length of the joypad leads. Both the NES and Super NES were released in Brazil in 1993 by Playtronic, a joint venture between the toy company Estrela and consumer electronics company Gradiente.[21]
-
-The Super NES and Super Famicom launched with few games, but these games were well received in the marketplace. In Japan, only two games were initially available: Super Mario World and F-Zero.[22] In North America, Super Mario World launched as a bundle with the console, and other launch titles include F-Zero, Pilotwings (both of which demonstrated the console's "Mode 7" pseudo-3D rendering capability), SimCity, and Gradius III.
-
-Console Wars
-The rivalry between Nintendo and Sega resulted in what has been described as one of the most notable console wars in video game history,[24] in which Sega positioned the Genesis as the "cool" console, with more mature titles aimed at older gamers, and edgy advertisements that occasionally attacked the competition.[25] Nintendo however, scored an early public relations advantage by securing the first console conversion of Capcom's arcade classic Street Fighter II for Super NES, which took over a year to make the transition to Genesis. Despite the Genesis's head start, much larger library of games, and lower price point,[26] the Genesis only represented an estimated 60% of the American 16-bit console market in June 1992,[27] and neither console could maintain a definitive lead for several years. Donkey Kong Country is said to have helped establish the Super NES's market prominence in the latter years of the 16-bit generation,[28][29][30][31] and for a time, maintain against the PlayStation and Saturn.[32] According to Nintendo, the company had sold more than 20 million Super NES units in the U.S.[33] According to a 2004 study of NPD sales data, the Sega Genesis was able to maintain its lead over the Super NES in the American 16-bit console market.
-
-Changes in Policy
-During the NES era, Nintendo maintained exclusive control over titles released for the system—the company had to approve every game, each third-party developer could only release up to five games per year (but some third parties got around this by using different names, for example Konami's "Ultra Games" brand), those games could not be released on another console within two years, and Nintendo was the exclusive manufacturer and supplier of NES cartridges. However, competition from Sega's console brought an end to this practice; in 1991, Acclaim began releasing games for both platforms, with most of Nintendo's other licensees following suit over the next several years; Capcom (which licensed some games to Sega instead of producing them directly) and Square were the most notable holdouts.[35]
-
-The company continued to carefully review submitted titles, giving them scores using a 40-point scale and allocating Nintendo's marketing resources accordingly. Each region performed separate evaluations.[36] Nintendo of America also maintained a policy that, among other things, limited the amount of violence in the games on its systems. One game, Mortal Kombat, would challenge this policy. A surprise hit in arcades in 1992, Mortal Kombat features splashes of blood and finishing moves that often depict one character dismembering the other. Because the Sega Genesis version retained the gore while the SNES version did not,[37] it outsold the SNES version by a ratio of three or four-to-one.[38]
-
-Game players were not the only ones to notice the violence in this game; US Senators Herb Kohl and Joe Lieberman convened a Congressional hearing on December 9, 1993 to investigate the marketing of violent video games to children.[c] While Nintendo took the high ground with moderate success, the hearings led to the creation of the Interactive Digital Software Association and the Entertainment Software Rating Board, and the inclusion of ratings on all video games.[37][38] With these ratings in place, Nintendo decided its censorship policies were no longer needed.
-
-32-bit era and beyond
-While other companies were moving on to 32-bit systems, Rare and Nintendo proved that the Super NES was still a strong contender in the market. In November 1994, Rare released Donkey Kong Country, a platform game featuring 3D models and textures pre-rendered on SGI workstations. With its detailed graphics, fluid animation and high-quality music, Donkey Kong Country rivaled the aesthetic quality of games that were being released on newer 32-bit CD-based consoles. In the last 45 days of 1994, the game sold 6.1 million units, making it the fastest-selling video game in history to that date. This game sent a message that early 32-bit systems had little to offer over the Super NES, and helped make way for the more advanced consoles on the horizon.[39][40]
-
-In October 1997, Nintendo released a redesigned model of the SNES (the SNS-101 model) in North America for US$99, which included the pack-in game Super Mario World 2: Yoshi's Island.[41] Like the earlier redesign of the NES (the NES-101 model), the new model was slimmer and lighter than its predecessor, but it lacked S-Video and RGB output, and it was among the last major SNES-related releases in the region. A similarly redesigned Super Famicom Jr. was released in Japan at around the same time.[42]
-
-Nintendo ceased production of the SNES in 1999,[citation needed] about two years after releasing Kirby's Dream Land 3 (its last first-party game for the system) on November 27, 1997, a year after releasing Frogger (its last third-party game for the system). In Japan, Nintendo continued production of the Super Famicom until September 2003,[2] and new games were produced until the year 2000, ending with the release of Metal Slader Glory Director's Cut on December 1, 2000.[43]
-
-Many popular SNES titles have since been ported to the Game Boy Advance, which has similar video capabilities. In 2005, Nintendo announced that SNES titles would be made available for download via the Wii and Wii U's Virtual Console service.[44] In 2007, Nintendo of Japan announced that it would no longer repair Family Computer or Super Famicom systems due to an increasing shortage of the necessary parts.
-
-The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System</value>
   </data>
   <data name="snesOpenFileButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -28297,7 +28191,7 @@ The above was taken from wikipedia: http://en.wikipedia.org/wiki/Super_Nintendo_
         KCW1OJmBgdEAyM4uLykAijPOAbJFkrLB7A0gdlFIkDOQfQTI5kuHsK+A2EkQ9hMQuwjoCSD7C0h9OpjN
         xAE2B8KWAbFLUitA9jI45xdUFmWmZ5QoGFpaWio4puQnpSoEVxaXpOYWK3jmJecXFeQXJZakpgDVQtwH
         BoIQhaAQ0wBqtNBkoDIAxQOE9TkQHL6MYmcQYgiQXFpUBmUyMhkT5iPMmCPBwOC/lIGB5Q9CzKSXgWGB
-        DgMD/1SEmJohA4OAPgPDvjkAwMZP/Uvs3KIAAAAJcEhZcwAAJOYAACTmASbqSeIAAAAGYktHRAD/AP8A
+        DgMD/1SEmJohA4OAPgPDvjkAwMZP/Uvs3KIAAAAJcEhZcwAAJOUAACTlAYtTaI8AAAAGYktHRAD/AP8A
         /6C9p5MAAABadEVYdGNvbW1lbnQARmlsZSBzb3VyY2U6IC8vY29tbW9ucy53aWtpbWVkaWEub3JnL3dp
         a2kvRmlsZTpTZWdhLUdlbmVzaXMtTkEtTWsyLUNvbnNvbGUtU2V0LnBuZ1TR1Z8AAAAldEVYdGRhdGU6
         Y3JlYXRlADIwMTEtMTAtMTBUMjE6MTg6NDkrMDA6MDBw4wI/AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDEx

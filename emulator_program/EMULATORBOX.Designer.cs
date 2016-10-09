@@ -149,7 +149,7 @@
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.richTextBox1.Size = new System.Drawing.Size(648, 174);
             this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "";
             // 
             // label9
             // 
@@ -535,7 +535,7 @@
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.richTextBox2.Size = new System.Drawing.Size(648, 174);
             this.richTextBox2.TabIndex = 12;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.richTextBox2.Text = "";
             // 
             // snesOpenFileButton
             // 
