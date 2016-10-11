@@ -253,7 +253,7 @@ namespace emulator_program
         #endregion
 
         #region "fileOpener section"
-        public static void fileOpener(string fileName, string pathName, string searchPath, string romFolder)
+        private static void fileOpener(string fileName, string pathName, string searchPath, string romFolder)
         {
             try
             {
@@ -282,7 +282,7 @@ namespace emulator_program
         #endregion
 
         #region "emulatorOpener section"
-        public static void emulatorOpener(string fileName, string pathName)
+        private static void emulatorOpener(string fileName, string pathName)
         {
             try
             {
@@ -302,13 +302,13 @@ namespace emulator_program
         #endregion
 
         #region "xmlParser section"
-        public static void XmlParser(XmlTextReader reader, out string romFolder)
+        private static void XmlParser(XmlTextReader reader, out string romFolder)
         {
             reader.ReadToFollowing("rom_folder");
             romFolder = reader.ReadElementContentAsString();
         }
 
-        public static void XmlParser(XmlTextReader reader, string panelName, out string executable, out string folder, out string romLocation)
+        private static void XmlParser(XmlTextReader reader, string panelName, out string executable, out string folder, out string romLocation)
         {
             try
             {
