@@ -18,6 +18,7 @@ namespace emulator_program
 {
     public partial class EMULATORBOX : Form
     {
+        private string romFolder;
         private string nesExe;
         private string nesFolder;
         private string nesRomLocation;
@@ -36,9 +37,10 @@ namespace emulator_program
         private string genesisExe;
         private string genesisFolder;
         private string genesisRomLocation;
-        private string neogeoExe;
-        private string neogeoFolder;
-        private string neogeoRomLocation;
+        private string neoGeoExe;
+        private string neoGeoFolder;
+        //this doesn't get used, just makes things easier with the XmlParser
+        private string neoGeoRomLocation;
 
         public EMULATORBOX()
         {
@@ -46,17 +48,15 @@ namespace emulator_program
             {
                 XmlTextReader reader = new XmlTextReader("user_settings.xml");
 
-                while(reader.Read())
-                {
-                    XmlParser(reader, "nes_panel", out nesExe, out nesFolder, out nesRomLocation);
-                    XmlParser(reader, "snes_panel", out snesExe, out snesFolder, out snesRomLocation);
-                    XmlParser(reader, "n64_panel", out n64Exe, out n64Folder, out n64RomLocation);
-                    XmlParser(reader, "gameboy_panel", out gameboyExe, out gameboyFolder, out gameboyRomLocation);
-                    XmlParser(reader, "NDS_panel", out NDSExe, out NDSFolder, out NDSRomLocation);
-                    XmlParser(reader, "genesis_panel", out genesisExe, out genesisFolder, out genesisRomLocation);
-                    XmlParser(reader, "neogeo_panel", out neogeoExe, out neogeoFolder, out neogeoRomLocation);
-                }
-
+                XmlParser(reader, out romFolder);
+                XmlParser(reader, "nes", out nesExe, out nesFolder, out nesRomLocation);
+                XmlParser(reader, "snes", out snesExe, out snesFolder, out snesRomLocation);
+                XmlParser(reader, "n64", out n64Exe, out n64Folder, out n64RomLocation);
+                XmlParser(reader, "gameboy", out gameboyExe, out gameboyFolder, out gameboyRomLocation);
+                XmlParser(reader, "NDS", out NDSExe, out NDSFolder, out NDSRomLocation);
+                XmlParser(reader, "genesis", out genesisExe, out genesisFolder, out genesisRomLocation);
+                XmlParser(reader, "neogeo", out neoGeoExe, out neoGeoFolder, out neoGeoRomLocation);
+                
                 InitializeComponent();
             }
             catch(Exception ex)
@@ -92,7 +92,7 @@ namespace emulator_program
         private void nesOpenFileButton_Click(object sender, EventArgs e)
         {
             //fileOpener("nestopia.exe", "Nestopia 1.4", "Nintendo Roms");
-            fileOpener(nesExe, nesFolder, nesRomLocation);
+            fileOpener(nesExe, nesFolder, nesRomLocation, romFolder);
         }
 
         private void nesEmuOpenButton_Click(object sender, EventArgs e)
@@ -118,7 +118,7 @@ namespace emulator_program
         private void snesOpenFileButton_Click(object sender, EventArgs e)
         {
             //fileOpener("snes9x.exe", "Snes9x 1.52", "Super Nintendo Roms");
-            fileOpener(snesExe, snesFolder, snesRomLocation);
+            fileOpener(snesExe, snesFolder, snesRomLocation, romFolder);
         }
 
         private void snesEmuOpenButton_Click(object sender, EventArgs e)
@@ -144,7 +144,7 @@ namespace emulator_program
         private void n64OpenFileButton_Click(object sender, EventArgs e)
         {
             //fileOpener("Project64.exe", "Project64", "Nintendo 64 Roms");
-            fileOpener(n64Exe, n64Folder, n64RomLocation);
+            fileOpener(n64Exe, n64Folder, n64RomLocation, romFolder);
         }
 
         private void n64EmuOpenButton_Click(object sender, EventArgs e)
@@ -170,7 +170,7 @@ namespace emulator_program
         private void gameboyOpenFileButton_Click(object sender, EventArgs e)
         {
             //fileOpener("VisualBoyAdvance-M.exe", "VisualBoyAdvance-M", "Nintendo Advance Roms");
-            fileOpener(gameboyExe, gameboyFolder, gameboyRomLocation);
+            fileOpener(gameboyExe, gameboyFolder, gameboyRomLocation, romFolder);
         }
 
         private void gameboyEmuOpenButton_Click(object sender, EventArgs e)
@@ -196,7 +196,7 @@ namespace emulator_program
         private void NDSOpenFileButton_Click(object sender, EventArgs e)
         {
             //fileOpener("DeSmuME_0.9.10_x86.exe", "DeSmu", "Nintendo DS Roms");
-            fileOpener(NDSExe, NDSFolder, NDSRomLocation);
+            fileOpener(NDSExe, NDSFolder, NDSRomLocation, romFolder);
         }
 
         private void NDSEmuOpenButton_Click(object sender, EventArgs e)
@@ -222,7 +222,7 @@ namespace emulator_program
         private void genesisOpenFileButton_Click(object sender, EventArgs e)
         {
             //fileOpener("Fusion.exe", "Fusion364", "Genesis Roms");
-            fileOpener(genesisExe, genesisFolder, genesisRomLocation);
+            fileOpener(genesisExe, genesisFolder, genesisRomLocation, romFolder);
         }
 
         private void genesisEmuOpenButton_Click(object sender, EventArgs e)
@@ -248,32 +248,30 @@ namespace emulator_program
         private void neogeoEmuOpenButton_Click(object sender, EventArgs e)
         {
             //emulatorOpener("WinKawaks.exe", "Kawaks");
-            emulatorOpener(neogeoExe, neogeoFolder);
+            emulatorOpener(neoGeoExe, neoGeoFolder);
         }
         #endregion
 
         #region "fileOpener section"
-        public static void fileOpener(string fileName, string pathName, string searchPath)
+        public static void fileOpener(string fileName, string pathName, string searchPath, string romFolder)
         {
             try
             {
                 string myFileName = fileName;
                 string root = Path.GetFullPath(myFileName);
                 root = root.Remove(3);
-                string FBDpath = Path.Combine(root, "RomFiles", searchPath);
+                string FBDpath = Path.Combine(root, romFolder, searchPath);
                 OpenFileDialog OFD = new OpenFileDialog();
                 OFD.Multiselect = false;
                 OFD.InitialDirectory = FBDpath;
                 if (OFD.ShowDialog() == DialogResult.OK)
                 {
-                
                         string path = Path.Combine(root, pathName, myFileName);
                         string path2 = string.Format("\"{0}\"", OFD.FileName);
                         Process startProgram = new Process();
                         ProcessStartInfo startInfo = new ProcessStartInfo(path);
                         startInfo.Arguments = path2;
                         Process.Start(startInfo);
-                
                 }
             }
             catch (Exception ex)
@@ -303,6 +301,13 @@ namespace emulator_program
         }
         #endregion
 
+        #region "xmlParser section"
+        public static void XmlParser(XmlTextReader reader, out string romFolder)
+        {
+            reader.ReadToFollowing("rom_folder");
+            romFolder = reader.ReadElementContentAsString();
+        }
+
         public static void XmlParser(XmlTextReader reader, string panelName, out string executable, out string folder, out string romLocation)
         {
             try
@@ -327,5 +332,6 @@ namespace emulator_program
                 throw ex;
             }
         }
+        #endregion
     }
 }
