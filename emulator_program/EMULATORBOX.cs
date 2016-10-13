@@ -39,7 +39,7 @@ namespace emulator_program
         private string genesisRomLocation;
         private string neoGeoExe;
         private string neoGeoFolder;
-        //this doesn't get used, just makes things easier with the XmlParser
+        //this doesn't get used, just makes things easier with the xmlParser
         private string neoGeoRomLocation;
 
         public EMULATORBOX()
@@ -48,14 +48,14 @@ namespace emulator_program
             {
                 XmlTextReader reader = new XmlTextReader("user_settings.xml");
 
-                XmlParser(reader, out romFolder);
-                XmlParser(reader, "nes", out nesExe, out nesFolder, out nesRomLocation);
-                XmlParser(reader, "snes", out snesExe, out snesFolder, out snesRomLocation);
-                XmlParser(reader, "n64", out n64Exe, out n64Folder, out n64RomLocation);
-                XmlParser(reader, "gameboy", out gameboyExe, out gameboyFolder, out gameboyRomLocation);
-                XmlParser(reader, "NDS", out NDSExe, out NDSFolder, out NDSRomLocation);
-                XmlParser(reader, "genesis", out genesisExe, out genesisFolder, out genesisRomLocation);
-                XmlParser(reader, "neogeo", out neoGeoExe, out neoGeoFolder, out neoGeoRomLocation);
+                xmlParser(reader, out romFolder);
+                xmlParser(reader, "nes", out nesExe, out nesFolder, out nesRomLocation);
+                xmlParser(reader, "snes", out snesExe, out snesFolder, out snesRomLocation);
+                xmlParser(reader, "n64", out n64Exe, out n64Folder, out n64RomLocation);
+                xmlParser(reader, "gameboy", out gameboyExe, out gameboyFolder, out gameboyRomLocation);
+                xmlParser(reader, "NDS", out NDSExe, out NDSFolder, out NDSRomLocation);
+                xmlParser(reader, "genesis", out genesisExe, out genesisFolder, out genesisRomLocation);
+                xmlParser(reader, "neogeo", out neoGeoExe, out neoGeoFolder, out neoGeoRomLocation);
                 
                 InitializeComponent();
             }
@@ -91,13 +91,11 @@ namespace emulator_program
 
         private void nesOpenFileButton_Click(object sender, EventArgs e)
         {
-            //fileOpener("nestopia.exe", "Nestopia 1.4", "Nintendo Roms");
             fileOpener(nesExe, nesFolder, nesRomLocation, romFolder);
         }
 
         private void nesEmuOpenButton_Click(object sender, EventArgs e)
         {
-            //emulatorOpener("nestopia.exe", "Nestopia 1.4");
             emulatorOpener(nesExe, nesFolder);
         }
         #endregion
@@ -117,13 +115,11 @@ namespace emulator_program
 
         private void snesOpenFileButton_Click(object sender, EventArgs e)
         {
-            //fileOpener("snes9x.exe", "Snes9x 1.52", "Super Nintendo Roms");
             fileOpener(snesExe, snesFolder, snesRomLocation, romFolder);
         }
 
         private void snesEmuOpenButton_Click(object sender, EventArgs e)
         {
-            //emulatorOpener("snes9x.exe", "Snes9x 1.52");
             emulatorOpener(snesExe, snesFolder);
         }
         #endregion
@@ -143,13 +139,11 @@ namespace emulator_program
 
         private void n64OpenFileButton_Click(object sender, EventArgs e)
         {
-            //fileOpener("Project64.exe", "Project64", "Nintendo 64 Roms");
             fileOpener(n64Exe, n64Folder, n64RomLocation, romFolder);
         }
 
         private void n64EmuOpenButton_Click(object sender, EventArgs e)
         {
-            //emulatorOpener("Project64.exe", "Project64");
             emulatorOpener(n64Exe, n64Folder);
         }
         #endregion
@@ -169,13 +163,11 @@ namespace emulator_program
 
         private void gameboyOpenFileButton_Click(object sender, EventArgs e)
         {
-            //fileOpener("VisualBoyAdvance-M.exe", "VisualBoyAdvance-M", "Nintendo Advance Roms");
             fileOpener(gameboyExe, gameboyFolder, gameboyRomLocation, romFolder);
         }
 
         private void gameboyEmuOpenButton_Click(object sender, EventArgs e)
         {
-            //emulatorOpener("VisualBoyAdvance-M.exe", "VisualBoyAdvance-M");
             emulatorOpener(gameboyExe, gameboyFolder);
         }
         #endregion
@@ -195,13 +187,11 @@ namespace emulator_program
 
         private void NDSOpenFileButton_Click(object sender, EventArgs e)
         {
-            //fileOpener("DeSmuME_0.9.10_x86.exe", "DeSmu", "Nintendo DS Roms");
             fileOpener(NDSExe, NDSFolder, NDSRomLocation, romFolder);
         }
 
         private void NDSEmuOpenButton_Click(object sender, EventArgs e)
         {
-            //emulatorOpener("DeSmuME_0.9.10_x86.exe", "DeSmu");
             emulatorOpener(NDSExe, NDSFolder);
         }
         #endregion
@@ -221,13 +211,11 @@ namespace emulator_program
 
         private void genesisOpenFileButton_Click(object sender, EventArgs e)
         {
-            //fileOpener("Fusion.exe", "Fusion364", "Genesis Roms");
             fileOpener(genesisExe, genesisFolder, genesisRomLocation, romFolder);
         }
 
         private void genesisEmuOpenButton_Click(object sender, EventArgs e)
         {
-            //emulatorOpener("Fusion.exe", "Fusion364");
             emulatorOpener(genesisExe, genesisFolder);
         }
         #endregion
@@ -247,7 +235,6 @@ namespace emulator_program
 
         private void neogeoEmuOpenButton_Click(object sender, EventArgs e)
         {
-            //emulatorOpener("WinKawaks.exe", "Kawaks");
             emulatorOpener(neoGeoExe, neoGeoFolder);
         }
         #endregion
@@ -302,13 +289,13 @@ namespace emulator_program
         #endregion
 
         #region "xmlParser section"
-        private static void XmlParser(XmlTextReader reader, out string romFolder)
+        private static void xmlParser(XmlTextReader reader, out string romFolder)
         {
             reader.ReadToFollowing("rom_folder");
             romFolder = reader.ReadElementContentAsString();
         }
 
-        private static void XmlParser(XmlTextReader reader, string panelName, out string executable, out string folder, out string romLocation)
+        private static void xmlParser(XmlTextReader reader, string panelName, out string executable, out string folder, out string romLocation)
         {
             try
             {
