@@ -1,0 +1,38 @@
+<user_settings>
+	<rom_folder>RomFiles</rom_folder>
+	<nes>
+		<executable>nestopia.exe</executable>
+		<folder>Nestopia 1.4</folder>
+		<rom_location>Nintendo Roms</rom_location>
+	</nes>
+	<snes>
+		<executable>snes9x.exe</executable>
+		<folder>Snes9x 1.52</folder>
+		<rom_location>Super Nintendo Roms</rom_location>
+	</snes>
+	<n64>
+		<executable>Project64.exe</executable>
+		<folder>Project64</folder>
+		<rom_location>Nintendo 64 Roms</rom_location>
+	</n64>
+	<gameboy>
+		<executable>VisualBoyAdvance-M.exe</executable>
+		<folder>VisualBoyAdvance-M</folder>
+		<rom_location>Nintendo Advance Roms</rom_location>
+	</gameboy>
+	<NDS>
+		<executable>DeSmuME_0.9.10_x86.exe</executable>
+		<folder>DeSmu</folder>
+		<rom_location>Nintendo DS Roms</rom_location>
+	</NDS>
+	<genesis>
+		<executable>Fusion.exe</executable>
+		<folder>Fusion364</folder>
+		<rom_location>Genesis Roms</rom_location>
+	</genesis>
+	<neogeo>
+		<executable>WinKawaks.exe</executable>
+		<folder>WinKawaks</folder>
+		<rom_location></rom_location><!--This isn't actually used, since this emulator has its own rom management-->
+	</neogeo>
+</user_settings>
