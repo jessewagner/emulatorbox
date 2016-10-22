@@ -58,6 +58,8 @@ namespace emulator_program
                 xmlParser(reader, "neogeo", out neoGeoExe, out neoGeoFolder, out neoGeoRomLocation);
                 
                 InitializeComponent();
+
+                this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             }
             catch(Exception ex)
             {

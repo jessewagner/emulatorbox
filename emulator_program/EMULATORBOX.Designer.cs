@@ -1,4 +1,6 @@
-﻿namespace emulator_program
+﻿using System.Drawing;
+using System.Windows.Forms;
+namespace emulator_program
 {
     partial class EMULATORBOX
     {
@@ -40,19 +42,19 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             this.nesPicture = new System.Windows.Forms.PictureBox();
             this.closeButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.nesLabel = new System.Windows.Forms.Label();
+            this.neogeoLabel = new System.Windows.Forms.Label();
+            this.snesPicture = new System.Windows.Forms.PictureBox();
+            this.neogeoPicture = new System.Windows.Forms.PictureBox();
+            this.genesisLabel = new System.Windows.Forms.Label();
+            this.snesLabel = new System.Windows.Forms.Label();
+            this.ndsLabel = new System.Windows.Forms.Label();
+            this.genesisPicture = new System.Windows.Forms.PictureBox();
+            this.n64Picture = new System.Windows.Forms.PictureBox();
+            this.ndsPicture = new System.Windows.Forms.PictureBox();
+            this.gameboyLabel = new System.Windows.Forms.Label();
+            this.n64Label = new System.Windows.Forms.Label();
+            this.gameboyPicture = new System.Windows.Forms.PictureBox();
             this.neogeoPanel = new System.Windows.Forms.Panel();
             this.neogeoEmuOpenButton = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
@@ -98,12 +100,12 @@
             this.nesPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nesPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.snesPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.neogeoPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genesisPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n64Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ndsPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameboyPicture)).BeginInit();
             this.neogeoPanel.SuspendLayout();
             this.snesPanel.SuspendLayout();
             this.n64Panel.SuspendLayout();
@@ -127,7 +129,7 @@
             this.nesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nesPanel.Location = new System.Drawing.Point(0, 0);
             this.nesPanel.Name = "nesPanel";
-            this.nesPanel.Size = new System.Drawing.Size(934, 861);
+            this.nesPanel.Size = new System.Drawing.Size(1920, 1160);
             this.nesPanel.TabIndex = 19;
             this.nesPanel.Visible = false;
             // 
@@ -207,24 +209,37 @@
             this.mainPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.mainPanel.Controls.Add(this.nesPicture);
             this.mainPanel.Controls.Add(this.closeButton);
-            this.mainPanel.Controls.Add(this.label1);
-            this.mainPanel.Controls.Add(this.label7);
-            this.mainPanel.Controls.Add(this.pictureBox1);
-            this.mainPanel.Controls.Add(this.pictureBox4);
-            this.mainPanel.Controls.Add(this.label6);
-            this.mainPanel.Controls.Add(this.label2);
-            this.mainPanel.Controls.Add(this.label5);
-            this.mainPanel.Controls.Add(this.pictureBox3);
-            this.mainPanel.Controls.Add(this.pictureBox5);
-            this.mainPanel.Controls.Add(this.pictureBox7);
-            this.mainPanel.Controls.Add(this.label4);
-            this.mainPanel.Controls.Add(this.label3);
-            this.mainPanel.Controls.Add(this.pictureBox6);
+            this.mainPanel.Controls.Add(this.nesLabel);
+            this.mainPanel.Controls.Add(this.neogeoLabel);
+            this.mainPanel.Controls.Add(this.snesPicture);
+            this.mainPanel.Controls.Add(this.neogeoPicture);
+            this.mainPanel.Controls.Add(this.genesisLabel);
+            this.mainPanel.Controls.Add(this.snesLabel);
+            this.mainPanel.Controls.Add(this.ndsLabel);
+            this.mainPanel.Controls.Add(this.genesisPicture);
+            this.mainPanel.Controls.Add(this.n64Picture);
+            this.mainPanel.Controls.Add(this.ndsPicture);
+            this.mainPanel.Controls.Add(this.gameboyLabel);
+            this.mainPanel.Controls.Add(this.n64Label);
+            this.mainPanel.Controls.Add(this.gameboyPicture);
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(934, 861);
+            this.mainPanel.Size = new System.Drawing.Size(1920, 1160);
             this.mainPanel.TabIndex = 19;
             this.toolTip1.SetToolTip(this.mainPanel, "Click on the picture of the system you would like to play");
+
+            int sideMargin = 10;
+            int marginBetweenBox = 32;
+            int combinedSpacesWidth = (sideMargin * 2) + (marginBetweenBox * 2);
+            int mainPanelSizeWidth = this.mainPanel.Size.Width;
+            int pictureBoxSizeWidth = (mainPanelSizeWidth - combinedSpacesWidth) / 3;
+            int topBottomMarginHeight = 12;
+            int marginBetweenBoxAndLabelHeight = 13;
+            int labelHeight = 20;
+            int marginBetweenLabelAndNextBoxHeight = 29;
+            int combinedSpacesHeight = (topBottomMarginHeight * 2) + (marginBetweenBoxAndLabelHeight * 3) + (labelHeight * 3) + (marginBetweenBoxAndLabelHeight * 2);
+            int mainPanelSizeHeight = this.mainPanel.Size.Height;
+            int pictureBoxSizeHeight = (mainPanelSizeHeight - combinedSpacesHeight) / 3;
             // 
             // nesPicture
             // 
@@ -232,14 +247,175 @@
             this.nesPicture.BackColor = System.Drawing.SystemColors.Window;
             this.nesPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.nesPicture.Image = ((System.Drawing.Image)(resources.GetObject("nesPicture.Image")));
-            this.nesPicture.Location = new System.Drawing.Point(10, 12);
+            this.nesPicture.Location = new System.Drawing.Point(mainPanel.Location.X + sideMargin, mainPanel.Location.Y + topBottomMarginHeight);
             this.nesPicture.Name = "nesPicture";
-            this.nesPicture.Size = new System.Drawing.Size(277, 224);
+            this.nesPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.nesPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.nesPicture.TabIndex = 2;
             this.nesPicture.TabStop = false;
             this.toolTip1.SetToolTip(this.nesPicture, "Nintendo Entertainment System");
             this.nesPicture.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // nesLabel
+            // 
+            this.nesLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nesLabel.Location = new System.Drawing.Point(mainPanel.Location.X + sideMargin, nesPicture.Location.Y + nesPicture.Size.Height + marginBetweenBoxAndLabelHeight);
+            this.nesLabel.Name = "nesLabel";
+            this.nesLabel.Size = new System.Drawing.Size(pictureBoxSizeWidth, labelHeight);
+            this.nesLabel.TabIndex = 11;
+            this.nesLabel.Text = "Nintendo Entertainment System";
+            this.nesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // snesPicture
+            // 
+            this.snesPicture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.snesPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.snesPicture.Image = ((System.Drawing.Image)(resources.GetObject("snesPicture.Image")));
+            this.snesPicture.Location = new System.Drawing.Point(nesPicture.Location.X + nesPicture.Size.Width + marginBetweenBox, topBottomMarginHeight);
+            this.snesPicture.Name = "snesPicture";
+            this.snesPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
+            this.snesPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.snesPicture.TabIndex = 1;
+            this.snesPicture.TabStop = false;
+            this.toolTip1.SetToolTip(this.snesPicture, "Super Nintendo Entertainment System");
+            this.snesPicture.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // snesLabel
+            // 
+            this.snesLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.snesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.snesLabel.Location = new System.Drawing.Point(nesLabel.Location.X + nesLabel.Size.Width + marginBetweenBox, snesPicture.Location.Y + snesPicture.Size.Height + marginBetweenBoxAndLabelHeight);
+            this.snesLabel.Name = "snesLabel";
+            this.snesLabel.Size = new System.Drawing.Size(pictureBoxSizeWidth, labelHeight);
+            this.snesLabel.TabIndex = 12;
+            this.snesLabel.Text = "Super Nintendo Entertainment System";
+            this.snesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gameboyPicture
+            // 
+            this.gameboyPicture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.gameboyPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.gameboyPicture.Image = ((System.Drawing.Image)(resources.GetObject("gameboyPicture.Image")));
+            this.gameboyPicture.Location = new System.Drawing.Point(sideMargin, nesLabel.Location.Y + nesLabel.Size.Height + marginBetweenLabelAndNextBoxHeight);
+            this.gameboyPicture.Name = "gameboyPicture";
+            this.gameboyPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
+            this.gameboyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gameboyPicture.TabIndex = 9;
+            this.gameboyPicture.TabStop = false;
+            this.toolTip1.SetToolTip(this.gameboyPicture, "Gameboy & Gameboy Advance");
+            this.gameboyPicture.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // gameboyLabel
+            // 
+            this.gameboyLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.gameboyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameboyLabel.Location = new System.Drawing.Point(mainPanel.Location.X + sideMargin, gameboyPicture.Location.Y + gameboyPicture.Size.Height + marginBetweenBoxAndLabelHeight);
+            this.gameboyLabel.Name = "gameboyLabel";
+            this.gameboyLabel.Size = new System.Drawing.Size(pictureBoxSizeWidth, labelHeight);
+            this.gameboyLabel.TabIndex = 14;
+            this.gameboyLabel.Text = "GameBoy and GameBoy Advance";
+            this.gameboyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // genesisPicture
+            // 
+            this.genesisPicture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.genesisPicture.BackColor = System.Drawing.SystemColors.Window;
+            this.genesisPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.genesisPicture.Image = ((System.Drawing.Image)(resources.GetObject("genesisPicture.Image")));
+            this.genesisPicture.Location = new System.Drawing.Point(sideMargin, gameboyLabel.Location.Y + gameboyLabel.Size.Height + marginBetweenLabelAndNextBoxHeight);
+            this.genesisPicture.Name = "genesisPicture";
+            this.genesisPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
+            this.genesisPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.genesisPicture.TabIndex = 3;
+            this.genesisPicture.TabStop = false;
+            this.toolTip1.SetToolTip(this.genesisPicture, "Sega Genesis");
+            this.genesisPicture.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // genesisLabel
+            // 
+            this.genesisLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.genesisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genesisLabel.Location = new System.Drawing.Point(mainPanel.Location.X + sideMargin, genesisPicture.Location.Y + genesisPicture.Size.Height + marginBetweenBoxAndLabelHeight);
+            this.genesisLabel.Name = "genesisLabel";
+            this.genesisLabel.Size = new System.Drawing.Size(pictureBoxSizeWidth, labelHeight);
+            this.genesisLabel.TabIndex = 16;
+            this.genesisLabel.Text = "Sega Genesis";
+            this.genesisLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // n64Picture
+            // 
+            this.n64Picture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.n64Picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.n64Picture.Image = ((System.Drawing.Image)(resources.GetObject("n64Picture.Image")));
+            this.n64Picture.Location = new System.Drawing.Point(snesPicture.Location.X + snesPicture.Size.Width + marginBetweenBox, topBottomMarginHeight);
+            this.n64Picture.Name = "n64Picture";
+            this.n64Picture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
+            this.n64Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.n64Picture.TabIndex = 8;
+            this.n64Picture.TabStop = false;
+            this.toolTip1.SetToolTip(this.n64Picture, "Nintendo 64");
+            this.n64Picture.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // n64Label
+            // 
+            this.n64Label.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.n64Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n64Label.Location = new System.Drawing.Point(snesLabel.Location.X + snesLabel.Size.Width + marginBetweenBox, n64Picture.Location.Y + n64Picture.Size.Height + marginBetweenBoxAndLabelHeight);
+            this.n64Label.Name = "n64Label";
+            this.n64Label.Size = new System.Drawing.Size(pictureBoxSizeWidth, labelHeight);
+            this.n64Label.TabIndex = 13;
+            this.n64Label.Text = "Nintendo 64";
+            this.n64Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ndsPicture
+            // 
+            this.ndsPicture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ndsPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ndsPicture.Image = ((System.Drawing.Image)(resources.GetObject("ndsPicture.Image")));
+            this.ndsPicture.Location = new System.Drawing.Point(gameboyLabel.Location.X + gameboyLabel.Size.Width + marginBetweenBox, snesLabel.Location.Y + snesLabel.Size.Height + marginBetweenLabelAndNextBoxHeight);
+            this.ndsPicture.Name = "ndsPicture";
+            this.ndsPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
+            this.ndsPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ndsPicture.TabIndex = 10;
+            this.ndsPicture.TabStop = false;
+            this.toolTip1.SetToolTip(this.ndsPicture, "Nintendo DS");
+            this.ndsPicture.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // ndsLabel
+            // 
+            this.ndsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ndsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ndsLabel.Location = new System.Drawing.Point(gameboyLabel.Location.X + gameboyLabel.Size.Width + marginBetweenBox, ndsPicture.Location.Y + ndsPicture.Size.Height + marginBetweenBoxAndLabelHeight);
+            this.ndsLabel.Name = "ndsLabel";
+            this.ndsLabel.Size = new System.Drawing.Size(pictureBoxSizeWidth, labelHeight);
+            this.ndsLabel.TabIndex = 15;
+            this.ndsLabel.Text = "Nintendo DS";
+            this.ndsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // neogeoPicture
+            // 
+            this.neogeoPicture.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.neogeoPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.neogeoPicture.Image = ((System.Drawing.Image)(resources.GetObject("neogeoPicture.Image")));
+            this.neogeoPicture.Location = new System.Drawing.Point(genesisPicture.Location.X + genesisPicture.Size.Width + marginBetweenBox, ndsLabel.Location.Y + ndsLabel.Size.Height + marginBetweenLabelAndNextBoxHeight);
+            this.neogeoPicture.Name = "neogeoPicture";
+            this.neogeoPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
+            this.neogeoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.neogeoPicture.TabIndex = 4;
+            this.neogeoPicture.TabStop = false;
+            this.neogeoPicture.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // neogeoLabel
+            // 
+            this.neogeoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.neogeoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neogeoLabel.Location = new System.Drawing.Point(genesisLabel.Location.X + genesisLabel.Size.Width + marginBetweenBox, neogeoPicture.Location.Y + neogeoPicture.Size.Height + marginBetweenBoxAndLabelHeight);
+            this.neogeoLabel.Name = "neogeoLabel";
+            this.neogeoLabel.Size = new System.Drawing.Size(pictureBoxSizeWidth, labelHeight);
+            this.neogeoLabel.TabIndex = 17;
+            this.neogeoLabel.Text = "NEOGEO and Capcom Arcade Games";
+            this.neogeoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // closeButton
             // 
@@ -247,7 +423,7 @@
             this.closeButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
-            this.closeButton.Location = new System.Drawing.Point(632, 298);
+            this.closeButton.Location = new System.Drawing.Point(ndsPicture.Location.X + ndsPicture.Size.Width + marginBetweenBox, n64Label.Location.Y + n64Label.Size.Height + marginBetweenLabelAndNextBoxHeight);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(83, 32);
             this.closeButton.TabIndex = 18;
@@ -255,167 +431,6 @@
             this.closeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 249);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 20);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Nintendo Entertainment System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(319, 811);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(277, 20);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "NEOGEO and Capcom Arcade Games";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(319, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "Super Nintendo Entertainment System");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(319, 575);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 811);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(277, 20);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Sega Genesis";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(319, 249);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 20);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Super Nintendo Entertainment System";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(319, 536);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(277, 20);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Nintendo DS";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(13, 575);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "Sega Genesis");
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(632, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(262, 224);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox5, "Nintendo 64");
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(319, 298);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox7, "Nintendo DS");
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 536);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(277, 20);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "GameBoy and GameBoy Advance";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(632, 249);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 20);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Nintendo 64";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(13, 298);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(277, 224);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox6, "Gameboy & Gameboy Advance");
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // neogeoPanel
             // 
@@ -431,7 +446,7 @@
             this.neogeoPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.neogeoPanel.Location = new System.Drawing.Point(0, 0);
             this.neogeoPanel.Name = "neogeoPanel";
-            this.neogeoPanel.Size = new System.Drawing.Size(934, 861);
+            this.neogeoPanel.Size = new System.Drawing.Size(1920, 1160);
             this.neogeoPanel.TabIndex = 19;
             this.neogeoPanel.Visible = false;
             // 
@@ -513,7 +528,7 @@
             this.snesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.snesPanel.Location = new System.Drawing.Point(0, 0);
             this.snesPanel.Name = "snesPanel";
-            this.snesPanel.Size = new System.Drawing.Size(934, 861);
+            this.snesPanel.Size = new System.Drawing.Size(1920, 1160);
             this.snesPanel.TabIndex = 19;
             this.snesPanel.Visible = false;
             // 
@@ -601,7 +616,7 @@
             this.n64Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.n64Panel.Location = new System.Drawing.Point(0, 0);
             this.n64Panel.Name = "n64Panel";
-            this.n64Panel.Size = new System.Drawing.Size(934, 861);
+            this.n64Panel.Size = new System.Drawing.Size(1920, 1160);
             this.n64Panel.TabIndex = 19;
             this.n64Panel.Visible = false;
             // 
@@ -691,7 +706,7 @@
             this.gameboyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gameboyPanel.Location = new System.Drawing.Point(0, 0);
             this.gameboyPanel.Name = "gameboyPanel";
-            this.gameboyPanel.Size = new System.Drawing.Size(934, 861);
+            this.gameboyPanel.Size = new System.Drawing.Size(1920, 1160);
             this.gameboyPanel.TabIndex = 19;
             this.gameboyPanel.Visible = false;
             // 
@@ -779,7 +794,7 @@
             this.NDSPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NDSPanel.Location = new System.Drawing.Point(0, 0);
             this.NDSPanel.Name = "NDSPanel";
-            this.NDSPanel.Size = new System.Drawing.Size(934, 861);
+            this.NDSPanel.Size = new System.Drawing.Size(1920, 1160);
             this.NDSPanel.TabIndex = 19;
             this.NDSPanel.Visible = false;
             // 
@@ -869,7 +884,7 @@
             this.genesisPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.genesisPanel.Location = new System.Drawing.Point(0, 0);
             this.genesisPanel.Name = "genesisPanel";
-            this.genesisPanel.Size = new System.Drawing.Size(934, 861);
+            this.genesisPanel.Size = new System.Drawing.Size(1920, 1160);
             this.genesisPanel.TabIndex = 19;
             this.genesisPanel.Visible = false;
             // 
@@ -949,7 +964,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(934, 861);
+            this.ClientSize = new System.Drawing.Size(1920, 1160);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.nesPanel);
             this.Controls.Add(this.snesPanel);
@@ -964,12 +979,12 @@
             this.nesPanel.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nesPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.snesPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.neogeoPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.genesisPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n64Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ndsPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameboyPicture)).EndInit();
             this.neogeoPanel.ResumeLayout(false);
             this.snesPanel.ResumeLayout(false);
             this.n64Panel.ResumeLayout(false);
@@ -986,19 +1001,19 @@
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.PictureBox nesPicture;
         private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label nesLabel;
+        private System.Windows.Forms.Label neogeoLabel;
+        private System.Windows.Forms.PictureBox snesPicture;
+        private System.Windows.Forms.PictureBox neogeoPicture;
+        private System.Windows.Forms.Label genesisLabel;
+        private System.Windows.Forms.Label snesLabel;
+        private System.Windows.Forms.Label ndsLabel;
+        private System.Windows.Forms.PictureBox genesisPicture;
+        private System.Windows.Forms.PictureBox n64Picture;
+        private System.Windows.Forms.PictureBox ndsPicture;
+        private System.Windows.Forms.Label gameboyLabel;
+        private System.Windows.Forms.Label n64Label;
+        private System.Windows.Forms.PictureBox gameboyPicture;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox richTextBox1;
@@ -1047,7 +1062,5 @@
         private System.Windows.Forms.RichTextBox richTextBox7;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button neogeoBackButton;
-
     }
 }
-
