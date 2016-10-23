@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿// COPYRIGHT 2014-2016 JESSE WAGNER ALL RIGHTS RESERVED
+
+using System.Drawing;
 using System.Windows.Forms;
 namespace emulator_program
 {
