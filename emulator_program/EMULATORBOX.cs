@@ -59,6 +59,7 @@ namespace emulator_program
                 
                 InitializeComponent();
 
+                this.FormBorderStyle = FormBorderStyle.None;
                 this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             }
             catch(Exception ex)

@@ -113,6 +113,7 @@ namespace emulator_program
             this.NDSPanel.SuspendLayout();
             this.genesisPanel.SuspendLayout();
             this.SuspendLayout();
+            this.Location = new System.Drawing.Point(0, 0);
             // 
             // nesPanel
             // 
@@ -129,7 +130,7 @@ namespace emulator_program
             this.nesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nesPanel.Location = new System.Drawing.Point(0, 0);
             this.nesPanel.Name = "nesPanel";
-            this.nesPanel.Size = new System.Drawing.Size(1920, 1160);
+            this.nesPanel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.nesPanel.TabIndex = 19;
             this.nesPanel.Visible = false;
             // 
@@ -206,7 +207,10 @@ namespace emulator_program
             // 
             this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mainPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainPanel.BackgroundImage")));
+            this.mainPanel.BackgroundImageLayout = ImageLayout.Center;
             this.mainPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mainPanel.Controls.Add(this.nesPicture);
             this.mainPanel.Controls.Add(this.closeButton);
             this.mainPanel.Controls.Add(this.nesLabel);
@@ -224,7 +228,7 @@ namespace emulator_program
             this.mainPanel.Controls.Add(this.gameboyPicture);
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1920, 1160);
+            this.mainPanel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.mainPanel.TabIndex = 19;
             this.toolTip1.SetToolTip(this.mainPanel, "Click on the picture of the system you would like to play");
 
@@ -259,6 +263,8 @@ namespace emulator_program
             // nesLabel
             // 
             this.nesLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nesLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.nesLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.nesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nesLabel.Location = new System.Drawing.Point(mainPanel.Location.X + sideMargin, nesPicture.Location.Y + nesPicture.Size.Height + marginBetweenBoxAndLabelHeight);
             this.nesLabel.Name = "nesLabel";
@@ -284,6 +290,8 @@ namespace emulator_program
             // snesLabel
             // 
             this.snesLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.snesLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.snesLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.snesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.snesLabel.Location = new System.Drawing.Point(nesLabel.Location.X + nesLabel.Size.Width + marginBetweenBox, snesPicture.Location.Y + snesPicture.Size.Height + marginBetweenBoxAndLabelHeight);
             this.snesLabel.Name = "snesLabel";
@@ -309,6 +317,8 @@ namespace emulator_program
             // gameboyLabel
             // 
             this.gameboyLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.gameboyLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.gameboyLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gameboyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gameboyLabel.Location = new System.Drawing.Point(mainPanel.Location.X + sideMargin, gameboyPicture.Location.Y + gameboyPicture.Size.Height + marginBetweenBoxAndLabelHeight);
             this.gameboyLabel.Name = "gameboyLabel";
@@ -335,6 +345,8 @@ namespace emulator_program
             // genesisLabel
             // 
             this.genesisLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.genesisLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.genesisLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.genesisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genesisLabel.Location = new System.Drawing.Point(mainPanel.Location.X + sideMargin, genesisPicture.Location.Y + genesisPicture.Size.Height + marginBetweenBoxAndLabelHeight);
             this.genesisLabel.Name = "genesisLabel";
@@ -360,6 +372,8 @@ namespace emulator_program
             // n64Label
             // 
             this.n64Label.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.n64Label.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.n64Label.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.n64Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n64Label.Location = new System.Drawing.Point(snesLabel.Location.X + snesLabel.Size.Width + marginBetweenBox, n64Picture.Location.Y + n64Picture.Size.Height + marginBetweenBoxAndLabelHeight);
             this.n64Label.Name = "n64Label";
@@ -385,6 +399,8 @@ namespace emulator_program
             // ndsLabel
             // 
             this.ndsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ndsLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ndsLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ndsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ndsLabel.Location = new System.Drawing.Point(gameboyLabel.Location.X + gameboyLabel.Size.Width + marginBetweenBox, ndsPicture.Location.Y + ndsPicture.Size.Height + marginBetweenBoxAndLabelHeight);
             this.ndsLabel.Name = "ndsLabel";
@@ -409,6 +425,8 @@ namespace emulator_program
             // neogeoLabel
             // 
             this.neogeoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.neogeoLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.neogeoLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.neogeoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.neogeoLabel.Location = new System.Drawing.Point(genesisLabel.Location.X + genesisLabel.Size.Width + marginBetweenBox, neogeoPicture.Location.Y + neogeoPicture.Size.Height + marginBetweenBoxAndLabelHeight);
             this.neogeoLabel.Name = "neogeoLabel";
@@ -446,7 +464,7 @@ namespace emulator_program
             this.neogeoPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.neogeoPanel.Location = new System.Drawing.Point(0, 0);
             this.neogeoPanel.Name = "neogeoPanel";
-            this.neogeoPanel.Size = new System.Drawing.Size(1920, 1160);
+            this.neogeoPanel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.neogeoPanel.TabIndex = 19;
             this.neogeoPanel.Visible = false;
             // 
@@ -528,7 +546,7 @@ namespace emulator_program
             this.snesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.snesPanel.Location = new System.Drawing.Point(0, 0);
             this.snesPanel.Name = "snesPanel";
-            this.snesPanel.Size = new System.Drawing.Size(1920, 1160);
+            this.snesPanel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.snesPanel.TabIndex = 19;
             this.snesPanel.Visible = false;
             // 
@@ -616,7 +634,7 @@ namespace emulator_program
             this.n64Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.n64Panel.Location = new System.Drawing.Point(0, 0);
             this.n64Panel.Name = "n64Panel";
-            this.n64Panel.Size = new System.Drawing.Size(1920, 1160);
+            this.n64Panel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.n64Panel.TabIndex = 19;
             this.n64Panel.Visible = false;
             // 
@@ -706,7 +724,7 @@ namespace emulator_program
             this.gameboyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gameboyPanel.Location = new System.Drawing.Point(0, 0);
             this.gameboyPanel.Name = "gameboyPanel";
-            this.gameboyPanel.Size = new System.Drawing.Size(1920, 1160);
+            this.gameboyPanel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.gameboyPanel.TabIndex = 19;
             this.gameboyPanel.Visible = false;
             // 
@@ -794,7 +812,7 @@ namespace emulator_program
             this.NDSPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NDSPanel.Location = new System.Drawing.Point(0, 0);
             this.NDSPanel.Name = "NDSPanel";
-            this.NDSPanel.Size = new System.Drawing.Size(1920, 1160);
+            this.NDSPanel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.NDSPanel.TabIndex = 19;
             this.NDSPanel.Visible = false;
             // 
@@ -884,7 +902,7 @@ namespace emulator_program
             this.genesisPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.genesisPanel.Location = new System.Drawing.Point(0, 0);
             this.genesisPanel.Name = "genesisPanel";
-            this.genesisPanel.Size = new System.Drawing.Size(1920, 1160);
+            this.genesisPanel.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.genesisPanel.TabIndex = 19;
             this.genesisPanel.Visible = false;
             // 
