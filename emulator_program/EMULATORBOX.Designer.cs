@@ -255,7 +255,7 @@ namespace emulator_program
             this.nesPicture.Name = "nesPicture";
             this.nesPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.nesPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.nesPicture.TabIndex = 2;
+            this.nesPicture.TabIndex = 1;
             this.nesPicture.TabStop = false;
             this.toolTip1.SetToolTip(this.nesPicture, "Nintendo Entertainment System");
             this.nesPicture.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -282,7 +282,7 @@ namespace emulator_program
             this.snesPicture.Name = "snesPicture";
             this.snesPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.snesPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.snesPicture.TabIndex = 1;
+            this.snesPicture.TabIndex = 2;
             this.snesPicture.TabStop = false;
             this.toolTip1.SetToolTip(this.snesPicture, "Super Nintendo Entertainment System");
             this.snesPicture.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -309,7 +309,7 @@ namespace emulator_program
             this.gameboyPicture.Name = "gameboyPicture";
             this.gameboyPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.gameboyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gameboyPicture.TabIndex = 9;
+            this.gameboyPicture.TabIndex = 4;
             this.gameboyPicture.TabStop = false;
             this.toolTip1.SetToolTip(this.gameboyPicture, "Gameboy & Gameboy Advance");
             this.gameboyPicture.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -337,7 +337,7 @@ namespace emulator_program
             this.genesisPicture.Name = "genesisPicture";
             this.genesisPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.genesisPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.genesisPicture.TabIndex = 3;
+            this.genesisPicture.TabIndex = 6;
             this.genesisPicture.TabStop = false;
             this.toolTip1.SetToolTip(this.genesisPicture, "Sega Genesis");
             this.genesisPicture.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -364,7 +364,7 @@ namespace emulator_program
             this.n64Picture.Name = "n64Picture";
             this.n64Picture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.n64Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.n64Picture.TabIndex = 8;
+            this.n64Picture.TabIndex = 3;
             this.n64Picture.TabStop = false;
             this.toolTip1.SetToolTip(this.n64Picture, "Nintendo 64");
             this.n64Picture.Click += new System.EventHandler(this.pictureBox5_Click);
@@ -391,7 +391,7 @@ namespace emulator_program
             this.ndsPicture.Name = "ndsPicture";
             this.ndsPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.ndsPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ndsPicture.TabIndex = 10;
+            this.ndsPicture.TabIndex = 5;
             this.ndsPicture.TabStop = false;
             this.toolTip1.SetToolTip(this.ndsPicture, "Nintendo DS");
             this.ndsPicture.Click += new System.EventHandler(this.pictureBox7_Click);
@@ -418,7 +418,7 @@ namespace emulator_program
             this.neogeoPicture.Name = "neogeoPicture";
             this.neogeoPicture.Size = new System.Drawing.Size(pictureBoxSizeWidth, pictureBoxSizeHeight);
             this.neogeoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.neogeoPicture.TabIndex = 4;
+            this.neogeoPicture.TabIndex = 7;
             this.neogeoPicture.TabStop = false;
             this.neogeoPicture.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
